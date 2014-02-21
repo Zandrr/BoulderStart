@@ -1,0 +1,37 @@
+%ul.nav.nav-pills.pull-left
+  %li
+    =link_to 'All'
+  %li
+    =link_to 'Engineering Courses', courses_path(:filter => 'Engineering')
+  %li
+    =link_to 'Music Courses', courses_path(:filter => 'Music')
+  %li
+    =link_to 'Business Courses', courses_path(:filter => 'Business')
+
+.container
+  .row
+    .col-lg-12
+      %h1.page-header
+        Courses
+        %small=@current_course
+-@courses.each do |f|
+  .col-lg-6.col-md-6.portfolio-item
+    %h3
+      %a{href: "#project-one"}=f.name
+      %small=f.code
+    %p=f.description
+    / .col-lg-6.col-md-6.portfolio-item
+    /   %a{href: "#project-two"}
+    /     %img.img-responsive{src: "http://placehold.it/700x400"}/
+    /   %h3
+    /     %a{href: "#project-two"} Business
+  /     %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+  / .row
+  /   .col-lg-6.col-md-6.portfolio-item
+  /     %a{href: "#project-three"}
+  /       %img.img-responsive{src: "http://placehold.it/700x400"}/
+  /     %h3
+  /       %a{href: "#project-three"} Music
+  /     %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+
+  / /.container
