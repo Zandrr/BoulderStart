@@ -13,5 +13,8 @@ class StaticPagesController < ApplicationController
 
   def campus
   end
+
+  def OffCampus
+  end
   
 end

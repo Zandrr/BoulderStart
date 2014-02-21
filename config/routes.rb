@@ -8,6 +8,7 @@ match '/contact', to: 'static_pages#contact', via: 'get'
 match '/campus',    to: 'static_pages#campus', via: 'get'
 match '/signup',  to: 'users#new', via: 'get'
 match '/courses', to: 'courses#index', via:'get'
+match '/OffCampus', to: 'static_pages#OffCampus', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
