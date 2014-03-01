@@ -1,0 +1,31 @@
+
+#carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
+  / Indicators
+  %ol.carousel-indicators.pull-right
+    %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+    %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+  / Wrapper for slides
+  .carousel-inner
+    .item.active
+      = image_tag "flatirons.jpg"
+      .carousel-caption
+        %h3 Flatirons 1
+        %p this is picture 1!
+        %p
+    .item
+      = image_tag "flatirons.jpg"
+      .carousel-caption
+        %h3 Flatirons 2
+        %p this is picture 2!
+        %p
+  / Controls
+  %a.left.carousel-control{"data-slide" => "prev", href: "#carousel-example-generic"}
+    %span.glyphicon.glyphicon-chevron-left
+  %a.right.carousel-control{"data-slide" => "next", href: "#carousel-example-generic"}
+    %span.glyphicon.glyphicon-chevron-right
+
+%div
+  %h1.page-header About
+  %h2 University of Colorado at Boulder Entrepreneurship
+  %p.blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+

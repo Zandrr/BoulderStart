@@ -7,19 +7,23 @@
     =link_to 'Music Courses', courses_path(:filter => 'Music')
   %li
     =link_to 'Business Courses', courses_path(:filter => 'Business')
+  %li
+    =link_to 'Entrepreneurship Certificate Courses', courses_path(:filter => 'Entrepreneurship')
+  %li
+    =link_to 'Law Courses', courses_path(:filter => 'Law')
 
-.container
-  .row
+.container-fluid
+  .row-fluid
     .col-lg-12
       %h1.page-header
         Courses
         %small=@current_course
--@courses.each do |f|
-  .col-lg-6.col-md-6.portfolio-item
-    %h3
-      %a{href: "#project-one"}=f.name
-      %small=f.code
-    %p=f.description
+  -@courses.each do |f|
+    .col-md-6.portfolio-item
+      %h3
+        =f.name
+        %small=f.code
+      %p=f.description
     / .col-lg-6.col-md-6.portfolio-item
     /   %a{href: "#project-two"}
     /     %img.img-responsive{src: "http://placehold.it/700x400"}/

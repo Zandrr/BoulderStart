@@ -1,0 +1,14 @@
+%body
+
+.container-fluid
+  .row-fluid
+    .col-lg-12
+      %h1.page-header
+        Spaces
+  -@spaces.each do |f|
+    .col-md-6.portfolio-item
+      %h3
+        =f[0]
+      %img.img-responsive{src: f[1] }
+      %p=f[2]
+  / /.container

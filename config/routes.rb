@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  resources :spaces
+
 get "courses/new"
 get "courses/index"
 root 'static_pages#home'
