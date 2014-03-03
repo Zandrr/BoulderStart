@@ -1,0 +1,10 @@
+%header.navbar.navbar-fixed-top.navbar-inverse
+  .navbar-inner
+    .container
+      = link_to "Boulder Startups", root_path, id: "logo"
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse.pull-right
+        %ul.nav.navbar-nav
+          %li
+            %a{href: "#"} Blogs
+          %li= link_to "Events", events_path
+          %li= link_to "Resources", campus_path

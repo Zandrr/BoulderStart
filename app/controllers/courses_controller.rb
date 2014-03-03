@@ -7,7 +7,7 @@ class CoursesController < ApplicationController
   		@courses = Course.find_all_by_discipline(params[:filter])
   		@current_course = Course.find_by_discipline(params[:filter]).discipline
   	else
-  		@courses = Course.asc
+  		@courses = Course.all.asc
       @current_course = 'All'
   	end
   end

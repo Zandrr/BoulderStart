@@ -1,11 +1,15 @@
 %body
-  %ul.nav.nav-pills.pull-left
-    %li
-      %a{href: "/embeddedCal"} 
-        %h3.glyphicon.glyphicon-calendar 
-        Full Calendar
-
 %h1.center Upcoming Events
+%ul.nav.nav-pills.pull-left
+  %li
+    %a{href: "/embeddedCal"} 
+      %h3.glyphicon.glyphicon-calendar 
+      Full Calendar
+  %li
+    %a{href: "http://www.google.com/calendar/render?cid=http%3A%2F%2Fwww.boulderstartups.org%2F%3Fplugin%3Dall-in-one-event-calendar%26controller%3Dai1ec_exporter_controller%26action%3Dexport_events%26cb%3D1146257465"} 
+      %h3.glyphicon.glyphicon-check 
+      Subscribe
+
 .container-fluid
   .row-fluid
     .col-lg-12
@@ -17,7 +21,7 @@
               %h4.panel-title
                 %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{@count}"}
                   %h3=f[0]
-                  %small=f[2]
+                  %blockquote=f[2]
             .panel-collapse.collapse{:id => "collapse#{@count}"}
               .panel-body
                 %label Start Time:
