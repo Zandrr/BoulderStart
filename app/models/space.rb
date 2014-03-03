@@ -12,4 +12,5 @@ class Space < ActiveRecord::Base
 		end
 		spaces_array
 	end
+	
 end

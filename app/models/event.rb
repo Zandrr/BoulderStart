@@ -1,0 +1,21 @@
+class Event < ActiveRecord::Base
+
+	def self.getcal
+	#response = HTTParty.get('http://www.google.com/calendar/feeds/colorado.edu_mdpltf14q21hhg50qb3e139fjg@group.calendar.google.com/public/full?alt=json&orderby=starttime&max-results=15&singleevents=true&sortorder=ascending&futureevents=true')
+	response = HTTParty.get('http://www.google.com/calendar/feeds/lr8d7nkd2ev3u3ocu0ve0jtkkc@group.calendar.google.com/public/full?alt=json&orderby=starttime&max-results=30&singleevents=true&sortorder=ascending&futureevents=true')
+	entries = response['feed']['entry']
+	entries_array = Array.new
+
+	entries.each do |entry|
+		eventname = entry['title']['$t']
+		description = entry['content']['$t']
+		starttime = Time.parse(entry['gd$when'][0]['startTime']).httpdate
+		endtime = Time.parse(entry['gd$when'][0]['endTime']).httpdate
+		location = entry['gd$where'][0]['valueString']
+
+		entries_array << [eventname, description, starttime, endtime, location]
+	end
+	entries_array
+end
+
+end

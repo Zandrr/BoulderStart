@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  resources :events
+
   resources :spaces
 
 get "courses/new"
@@ -11,6 +13,7 @@ match '/campus',    to: 'static_pages#campus', via: 'get'
 match '/signup',  to: 'users#new', via: 'get'
 match '/courses', to: 'courses#index', via:'get'
 match '/OffCampus', to: 'static_pages#OffCampus', via: 'get'
+match '/embeddedCal', to: 'events#embeddedCal', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
