@@ -1,23 +1,30 @@
 %body
   %ul.nav.nav-pills.pull-left
     %li
-  %a{href: "/embeddedCal"} Full Calendar
+      %a{href: "/embeddedCal"} 
+        %h3.glyphicon.glyphicon-calendar 
+        Full Calendar
+
 
 .container-fluid
   .row-fluid
     .col-lg-12
-      %h1.page-header
-        Upcoming Events
-  -@events.each do |f|
-    .col-md-6.portfolio-item
-      %h3
-        =f[0]
-
-      %label Start Time:
-      %p=f[2]
-      %label End Time:
-      %p=f[3]
-      %label Location:
-      %p=f[4]
-      %label Description:
-      %small=f[1]
+      -@events.each do |f|
+        -@count = @count+1
+        #accordion.panel-group
+          .panel.panel-default
+            .panel-heading
+              %h4.panel-title
+                %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{@count}"}
+                  %h3=f[0]
+                  %small=f[2]
+            .panel-collapse.collapse{:id => "collapse#{@count}"}
+              .panel-body
+                %label Start Time:
+                %p=f[2]
+                %label End Time:
+                %p=f[3]
+                %label Location:
+                %p=f[4]
+                %label Description:
+                %small=f[1]

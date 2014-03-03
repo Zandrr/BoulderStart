@@ -9,8 +9,8 @@ class Event < ActiveRecord::Base
 	entries.each do |entry|
 		eventname = entry['title']['$t']
 		description = entry['content']['$t']
-		starttime = Time.parse(entry['gd$when'][0]['startTime']).httpdate
-		endtime = Time.parse(entry['gd$when'][0]['endTime']).httpdate
+		starttime = Time.parse(entry['gd$when'][0]['startTime']).strftime("%A, %b %d at %I:%M %p")
+		endtime = Time.parse(entry['gd$when'][0]['endTime']).strftime("%A, %b %d at %I:%M %p")
 		location = entry['gd$where'][0]['valueString']
 
 		entries_array << [eventname, description, starttime, endtime, location]
