@@ -10,6 +10,7 @@ class CoursesController < ApplicationController
   		@courses = Course.all.asc
       @current_course = 'All'
   	end
+    @count = 0
   end
 
 end

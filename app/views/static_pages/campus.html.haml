@@ -12,11 +12,11 @@
           %small Campus
     .row
       .col-lg-6.col-md-6.portfolio-item
-        %a{href: "#project-one"}
-          %img.img-responsive{src: "http://placehold.it/700x400"}/
+        %a{href: "courses"}
+          %img=link_to(image_tag( "CUclass.jpg", :class => "img-responsive"),courses_path)
         %h3
-          %a{href: "courses/index"} Classes
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+          %a{href: "courses"} Courses
+        %p Courses offered at the University of Colorado at Boulder relating to entrepreneurship.
       .col-lg-6.col-md-6.portfolio-item
         %a{href: "#project-two"}
           %img.img-responsive{src: "http://placehold.it/700x400"}/
