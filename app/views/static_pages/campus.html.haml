@@ -1,9 +1,11 @@
 %body
   %ul.nav.nav-pills.pull-left
     %li.active
-      %a{href: "#"} Campus
+      %a{href: "#"} 
+        .black Campus
     %li
-      %a{href: "/OffCampus"} Off Campus
+      %a{href: "/OffCampus"} 
+        .black Off Campus
   .container
     .row
       .col-lg-12
@@ -15,20 +17,24 @@
         %a{href: "courses"}
           %img=link_to(image_tag( "CUclass.jpg", :class => "img-responsive"),courses_path)
         %h3
-          %a{href: "courses"} Courses
-        %p Courses offered at the University of Colorado at Boulder relating to entrepreneurship.
+          %a{href: "courses"} 
+            .black Courses
+        %p.inset Courses offered at the University of Colorado at Boulder relating to entrepreneurship.
       .col-lg-6.col-md-6.portfolio-item
         %a{href: "#project-two"}
           %img.img-responsive{src: "http://placehold.it/700x400"}/
         %h3
-          %a{href: "#project-two"} Student Groups
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+          %a{href: "#project-two"} 
+            .black Student Groups
+        %p.inset Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
     .row
       .col-lg-6.col-md-6.portfolio-item
         %a{href: "#project-three"}
           %img.img-responsive{src: "http://placehold.it/700x400"}/
         %h3
-          %a{href: "#project-three"} Departments and Groups
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+          %a{href: "#project-three"}
+            .black Departments and Groups
+        %p.inset Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
     %hr/
-  / /.container
+:javascript
+  $.backstretch("#{asset_path 'flatirons.jpg'}");

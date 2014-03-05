@@ -1,16 +1,16 @@
-%ul.nav.nav-pills.pull-left
+%ul.nav.nav-pills
   %li
-    =link_to 'All'
+    =link_to 'All', :class => 'black'
   %li
-    =link_to 'Engineering Courses', courses_path(:filter => 'Engineering')
+    =link_to 'Engineering Courses', courses_path(:filter => 'Engineering'), :class => 'black'
   %li
-    =link_to 'Music Courses', courses_path(:filter => 'Music')
+    =link_to 'Music Courses', courses_path(:filter => 'Music'), :class => 'black'
   %li
-    =link_to 'Business Courses', courses_path(:filter => 'Business')
+    =link_to 'Business Courses', courses_path(:filter => 'Business'), :class => 'black'
   %li
-    =link_to 'Entrepreneurship Certificate Courses', courses_path(:filter => 'Entrepreneurship')
+    =link_to 'Entrepreneurship Certificate Courses', courses_path(:filter => 'Entrepreneurship'), :class => 'black'
   %li
-    =link_to 'Law Courses', courses_path(:filter => 'Law')
+    =link_to 'Law Courses', courses_path(:filter => 'Law'), :class => 'black'
 
 .container-fluid
   .row-fluid
@@ -32,6 +32,8 @@
             .panel-body
               %label Description
               %p=f.description
+:javascript
+  $.backstretch("#{asset_path 'flatirons.jpg'}");
 
 
 

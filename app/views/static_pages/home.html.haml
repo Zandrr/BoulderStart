@@ -6,16 +6,16 @@
     %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
   / Wrapper for slides
   .carousel-inner
-    .item.active
-      = image_tag "flatirons.jpg"
+    .item.active.constant
+      %img= image_tag("space.jpg", :class => "constant")
       .carousel-caption
-        %h3 Flatirons 1
+        %h3 First image
         %p this is picture 1!
         %p
-    .item
-      = image_tag "flatirons.jpg"
+    .item.constant
+      %img= image_tag("space.jpg", :class => "constant")
       .carousel-caption
-        %h3 Flatirons 2
+        %h3 Second Image
         %p this is picture 2!
         %p
   / Controls
@@ -25,7 +25,11 @@
     %span.glyphicon.glyphicon-chevron-right
 
 %div
-  %h1.page-header About
-  %h2 University of Colorado at Boulder Entrepreneurship
-  %p.blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+  %h1.black About
+  %h2.inset University of Colorado at Boulder Entrepreneurship
+  %p.inset Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+
+:javascript
+  $.backstretch("#{asset_path 'flatirons.jpg'}");
+
 

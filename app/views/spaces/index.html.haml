@@ -3,8 +3,8 @@
   %ul.nav.pull-left
     %li
   %a{href: "/campus"}
-    %span.glyphicon.glyphicon-arrow-left
-    Back
+    %span.glyphicon.glyphicon-arrow-left.black
+      .black Back
 
 .container-fluid
   .row-fluid
@@ -14,10 +14,13 @@
   -@spaces.each do |f|
     .col-md-6.portfolio-item
       %h3
-        =f[0]
+        .black=f[0]
       %img.img-responsive{src: f[1] }
-      %p=f[2]
+      %h4
+        .black=f[2]
 %h1
-  Powered by
+  .black Powered by
   =link_to image_tag("https://d22eps1db7swyg.cloudfront.net/assets/logo-5beae2941b96ca39fdfe3c9ae48aa277.png"), 'https://www.pivotdesk.com/'
   / /.container
+:javascript
+  $.backstretch("#{asset_path 'flatirons.jpg'}");

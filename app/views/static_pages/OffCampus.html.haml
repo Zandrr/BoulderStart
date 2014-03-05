@@ -1,9 +1,11 @@
 %body
   %ul.nav.nav-pills.pull-left
     %li
-      %a{href: "/campus"} Campus
+      %a{href: "/campus"} 
+        .black Campus
     %li.active
-      %a{href: "#"} Off Campus
+      %a{href: "#"} 
+        .black Off Campus
   .container
     .row
       .col-lg-12
@@ -14,21 +16,25 @@
       .col-lg-6.col-md-6.portfolio-item
         %a{href: "#project-one"}
           %img.img-responsive{src: "http://placehold.it/700x400"}/
-        %h3
-          %a{href: "courses/index"} X
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+        %h3.black
+          %a{href: "courses/index"} 
+            .black X
+        %p.inset Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
       .col-lg-6.col-md-6.portfolio-item
         %a{href: "spaces"}
           %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
-        %h3
-          %a{href: "spaces"} Spaces
-        %p A list of available spaces that entrepreneurs can use!
+        %h3.black
+          %a{href: "spaces"} 
+            .black Spaces
+        %p.inset A list of available spaces that entrepreneurs can use!
     .row
       .col-lg-6.col-md-6.portfolio-item
         %a{href: "#project-three"}
           %img.img-responsive{src: "http://placehold.it/700x400"}/
-        %h3
-          %a{href: "#project-three"} Z
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+        %h3.black
+          %a{href: "#project-three"} 
+          .black Z
+        %p.inset Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
     %hr/
-  / /.container
+:javascript
+  $.backstretch("#{asset_path 'flatirons.jpg'}");

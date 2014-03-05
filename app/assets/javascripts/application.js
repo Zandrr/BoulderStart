@@ -13,6 +13,7 @@
 //= require jquery_ujs
 //= require_tree .
 //= require bootstrap
-//= require jquery.flexslider
+//= require 'jquery.backstretch'
 //= require turbolinks
+
 
