@@ -22,16 +22,16 @@
     -@count = @count+1
     .col-md-6.portfolio-item
       #accordion.panel-group
-        .panel.panel-default
-          .panel-heading
-            %h2.panel-title
-              %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{@count}"}
-                %h3=f.name
-                %p=f.code
-          .panel-collapse.collapse{:id => "collapse#{@count}"}
-            .panel-body
-              %label Description
-              %p=f.description
+      .panel.panel-default
+        .panel-heading
+        %h2.panel-title
+          %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{@count}"}
+            %h3=f.name
+            %p=f.code
+      .panel-collapse.collapse{:id => "collapse#{@count}"}
+        .panel-body
+          %label Description
+          %p=f.description
 :javascript
   $.backstretch("#{asset_path 'flatirons.jpg'}");
 
