@@ -7,6 +7,7 @@ gem 'bootstrap-sass', '3.1.1'
 gem 'httparty'
 gem 'backstretch-rails'
 gem 'twitter'
+gem 'devise'
 
 
 group :development, :test do

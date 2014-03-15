@@ -11,9 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140310234528) do
+ActiveRecord::Schema.define(version: 20140315192335) do
 
   create_table "blogs", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categories", force: true do |t|
+    t.integer  "position_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -28,6 +35,15 @@ ActiveRecord::Schema.define(version: 20140310234528) do
   end
 
   create_table "events", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "positions", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.boolean  "looking"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -56,6 +72,12 @@ ActiveRecord::Schema.define(version: 20140310234528) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "website"
+    t.text     "description"
+    t.string   "angellist"
+    t.string   "linkedin"
+    t.string   "twitter"
+    t.string   "type"
   end
 
 end
