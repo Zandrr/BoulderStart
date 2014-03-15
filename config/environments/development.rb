@@ -27,5 +27,9 @@ SampleApp::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+
+  config.assets.cache_store = :null_store  # Disables the Asset cache
+  config.sass.cache = false  # Disable the SASS compiler cache 
+  
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
