@@ -11,6 +11,7 @@ SampleApp::Application.routes.draw do
   get "positions/edit"
   get "users/index"
   get "users/show"
+
   resources :blogs
 
   resources :events
@@ -26,7 +27,6 @@ match '/resources',    to: 'static_pages#resources', via: 'get'
 match '/blog',   to: 'static_pages#blog', via: 'get'
 match '/contact', to: 'static_pages#contact', via: 'get'
 match '/campus',    to: 'static_pages#campus', via: 'get'
-match '/signup',  to: 'users#new', via: 'get'
 match '/courses', to: 'courses#index', via:'get'
 match '/OffCampus', to: 'static_pages#OffCampus', via: 'get'
 match '/embeddedCal', to: 'events#embeddedCal', via: 'get'
