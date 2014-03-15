@@ -1,7 +1,11 @@
 SampleApp::Application.routes.draw do
+  resources :blogs
+
   resources :events
 
   resources :spaces
+
+  resources :student_groups
 
 get "courses/new"
 get "courses/index"

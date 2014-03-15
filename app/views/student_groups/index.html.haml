@@ -1,0 +1,15 @@
+.container-fluid
+  .row-fluid
+    .col-lg-12
+      %h1.page-header
+        Student Groups
+  -@studentgroups.each do |f|
+    .col-md-4.portfolio-item
+      %h3=f.name
+      =link_to(image_tag( "#{f.photo}", :class => "img-responsive", :style => "width: 200px;"),"#{f.website}")
+      %label Description
+      %p=f.description
+
+
+:javascript
+  $.backstretch("#{asset_path 'flatirons.jpg'}");

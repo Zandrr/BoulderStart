@@ -6,6 +6,7 @@ gem 'rails', '4.0.2'
 gem 'bootstrap-sass', '3.1.1'
 gem 'httparty'
 gem 'backstretch-rails'
+gem 'twitter'
 
 
 group :development, :test do

@@ -48,7 +48,54 @@ class_list =  [
 
 ]
 
+student_groups = [
+
+["Active Entrepreneurs","CU Student Entrepreneurship Collaboration.","active.png","https://www.aecuboulder.com"],
+
+["Boulder Beta Alpha Psi","Leeds Business Fraternity.","BAP.png","http://leeds.colorado.edu/club/betaalphapsi"],
+
+["Boulder Creatives","Cross-campus student club/nonprofit organization performing high-level design, marketing, and advertising work for Colorado companies.","Lcreatives.png","http://bouldercreatives.com"],
+
+["Business Law Association (BLA)","Provides law students with contacts and info about the business world.","No Photo URL","https://www.colorado.edu/law/students/organizations"],
+
+["Collegiate Social Impact Initiatives (CSII)","We are college students working as effective and sustainable agents of positive social impact.","CSII.png","http://csii.colorado.edu"],
+
+["CU Biotech Club","Student organization for business, engineering, and life sciences students interested in biotechnology.","Biotech.png","http://www.cubiotechclub.com/"],
+
+["CU CEO","Undergraduate entrepreneurship club for Leeds School of Business students.","CEO.png","http://leeds.colorado.edu/club/ceo"],
+
+["CU Energy Club","Interdisciplinary entrepreneurship club for students interested in the energy industry.","energy.png","http://cuenergy.org"],
+
+["CU New Venture Challenge (NVC)","Interdisciplinary cross-campus business competition.","nvc.png","http://cunvc.org"],
+
+["CUSkills","Connecting students to peers who can help.","cuskills.png","http://cuskills.com"],
+
+["CU Women In Business Club","Leeds focused, student club for females in business.","No Photo URL","https://leeds.colorado.edu/club/mbawomeninbusiness"],
+
+["Entrepreneurial Solutions","Leeds focused student consulting organization.","EntSolutions.png","http://leeds.colorado.edu/club/entrepsolutions"],
+
+["InnovateCU","Software Development and Computer Science Club.","innovateCU.png","http://innovatecu.com"],
+
+["Leeds Entrepreneurship Alliance (LEA)","MBA student club, Leeds focused.","LEA.png","https://cuboulderlea.wordpress.com/"],
+
+["The Silicon Flatirons Student Group","Interdisciplinary research center for Law Students and ITP focusing on entrepreneurship.","silicon.png","http://silicon-flatirons.org/"],
+
+["StartUp CU","Cross-campus entrepreneurship club for new startups.","Startupcu.png","http://startupcu.com"],
+
+["TEDxCU","CU’s own TEDx.","TED.png","http://tedxcu.com"],
+
+
+
+
+]
+
 
 class_list.each do |name, code, description, discipline |
   Course.create( name: name, code: code, description: description, discipline: discipline )
 end
+
+student_groups.each do |name, description, photo, website |
+	StudentGroups.create(name: name, description: description, photo: photo, website: website)
+end
+
+

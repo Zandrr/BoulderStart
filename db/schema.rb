@@ -11,7 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140301232705) do
+ActiveRecord::Schema.define(version: 20140310234528) do
+
+  create_table "blogs", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "courses", force: true do |t|
     t.string   "name"
@@ -28,6 +33,20 @@ ActiveRecord::Schema.define(version: 20140301232705) do
   end
 
   create_table "spaces", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "student_groups", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name"
+    t.string   "description"
+    t.string   "photo"
+    t.string   "website"
+  end
+
+  create_table "twitterclients", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
