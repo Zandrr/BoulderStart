@@ -8,6 +8,7 @@ gem 'httparty'
 gem 'backstretch-rails'
 gem 'twitter'
 gem 'devise'
+gem 'acts-as-taggable-on'
 
 
 group :development, :test do
