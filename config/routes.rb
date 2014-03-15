@@ -1,4 +1,15 @@
 SampleApp::Application.routes.draw do
+  get "categories/index"
+  get "categories/show"
+  get "categories/edit"
+  get "categories/new"
+  get "positions/index"
+  get "positions/show"
+  get "positions/destroy"
+  get "positions/new"
+  get "positions/edit"
+  get "users/index"
+  get "users/show"
   resources :blogs
 
   resources :events
