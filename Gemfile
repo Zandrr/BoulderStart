@@ -9,6 +9,7 @@ gem 'backstretch-rails'
 gem 'twitter'
 gem 'devise'
 gem 'acts-as-taggable-on'
+gem 'sprockets', '2.11.0'
 
 
 group :development, :test do

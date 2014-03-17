@@ -12,7 +12,7 @@ class BlogsController < ApplicationController
     config.consumer_key        = "acupICugan9LNSpGPpg"
     config.consumer_secret     = "DCgAwp7ZhV5cQsbadhtfEHVHBvqUXvUiH3XmjGLJA"
     end
-
+      
       @users = ["PivotDesk", "GnipEng", "SiliconFlatiron"]
 
   end
