@@ -1,40 +1,37 @@
-%body
-  %ul.nav.nav-pills.pull-left
-    %li
-      %a{href: "/campus"} 
-        .black Campus
-    %li.active
-      %a{href: "#"} 
-        .black Off Campus
-  .container
-    .row
-      .col-lg-12
-        %h1.page-header
-          Resources
-          %small Off Campus
-    .row
-      .col-lg-6.col-md-6.portfolio-item
-        %a{href: "#project-one"}
-          %img.img-responsive{src: "http://placehold.it/700x400"}/
-        %h3.black
-          %a{href: "courses/index"} 
-            .black X
-        %p.inset Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-      .col-lg-6.col-md-6.portfolio-item
-        %a{href: "spaces"}
-          %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
-        %h3.black
-          %a{href: "spaces"} 
-            .black Spaces
-        %p.inset A list of available spaces that entrepreneurs can use!
-    .row
-      .col-lg-6.col-md-6.portfolio-item
-        %a{href: "#project-three"}
-          %img.img-responsive{src: "http://placehold.it/700x400"}/
-        %h3.black
-          %a{href: "#project-three"} 
-          .black Z
-        %p.inset Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    %hr/
+
+%ul.nav.nav-pills.pull-left
+  %li
+    %a{href: "/campus"} 
+      .black Campus
+  %li.active
+    %a{href: "#"} 
+      .black Off Campus
+.container
+  .col-lg-12
+    %h1.page-header
+      Resources
+      %small Off Campus
+  .row
+    .col-md-4.col-md-4.portfolio-item
+      %a{href: "spaces"}
+        %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
+      %h3.black 
+        %a{href: "spaces"} 
+          .black Spaces
+      %p.inset A list of available spaces that entrepreneurs can use!
+    .col-md-4.col-md-4.portfolio-item
+      %a{href: "spaces"}
+        %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
+      %h3.black
+        %a{href: "spaces"} 
+          .black X
+      %p.inset A list of available spaces that entrepreneurs can use!
+    .col-md-4.col-md-4.portfolio-item
+      %a{href: "spaces"}
+        %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
+      %h3.black
+        %a{href: "spaces"} 
+          .black Y
+      %p.inset A list of available spaces that entrepreneurs can use!
 :javascript
   $.backstretch("#{asset_path 'flatirons.jpg'}");

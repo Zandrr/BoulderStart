@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  get "twitter/index"
+  get"twitter/user_tweet"
   devise_for :users
   get "categories/index"
   get "categories/show"
