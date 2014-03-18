@@ -1,6 +1,11 @@
--@users.each do |user|
-  -@client.user_timeline(user).each do |tweet|
-    %ul
+/ -@users.each do |user|
+/   -@client.user_timeline(user).each do |tweet|
+/     %ul
     
-      %h3=user
-      %li=tweet.text
+/       %h3=user
+/       %li=tweet.text
+
+%a.twitter-timeline{"data-widget-id" => "446003144237916160", :href => "https://twitter.com/wellsauce/boulderstartups", :style => "float: left;"} 
+:javascript
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  $.backstretch("#{asset_path 'flatirons.jpg'}");

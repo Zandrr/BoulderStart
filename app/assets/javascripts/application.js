@@ -15,5 +15,6 @@
 //= require bootstrap
 //= require 'jquery.backstretch'
 //= require turbolinks
+//= require jqcloud
 
 
