@@ -4,16 +4,21 @@
   %ol.carousel-indicators
     %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
     %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+    %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
   / Wrapper for slides
   .carousel-inner
     .item.active.constant
-      %img= image_tag("pearl.jpg")
-    .item.constant
-      %img= image_tag("Startups.jpg")
+      %img= image_tag("Paul-B-crowd.jpg")
       .carousel-caption
-        %h3 Second Image
-        %p this is picture 2!
-        %p With a caption
+        %h1 THINK BIGGER
+    .item.constant
+      %img= image_tag("BlogFrog.jpg")
+      .carousel-caption
+        %h1 INSIGHTFUL QUOTE
+    .item.constant
+      %img= image_tag("Rideorama.jpg")
+      .carousel-caption
+        %h1 READY, SET, STARTUP
   / Controls
   %a.left.carousel-control{"data-slide" => "prev", href: "#carousel-example-generic"}
     %span.glyphicon.glyphicon-chevron-left
@@ -21,7 +26,7 @@
     %span.glyphicon.glyphicon-chevron-right
 
 %div
-  %h1.black About
+  %h1{:style => "color:black;"} About
   %h2.inset University of Colorado at Boulder Entrepreneurship
   %p.inset Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
 

@@ -1,73 +1,71 @@
-%body
-  %ul.nav.nav-pills.pull-left
-    %li.active
-      %a{href: "#"} All
-    %li
-      %a{href: "#"} Resource 1
-    %li
-      %a{href: "#"} Resource 2
-  .container
+
+%ul.nav.nav-pills.pull-left
+  %li.active
+    %a{href:'#'}
+      .black All
+  %li
+    %a{href: "/campus"} 
+      .black Campus
+  %li
+    %a{href: "/OffCampus"} 
+      .black Off Campus
+.container
+  .col-lg-12
+    %h1.page-header
+      Resources
+      %small All
+  .row
+    .col-md-4.col-md-4.portfolio-item
+      %a{href: "spaces"}
+        %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
+      %h3.black 
+        %a{href: "spaces"} 
+          .black Spaces
+      %p.inset A list of available spaces that entrepreneurs can use!
+    .col-md-4.col-md-4.portfolio-item
+      %a{href: "spaces"}
+        %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
+      %h3.black
+        %a{href: "spaces"} 
+          .black X
+      %p.inset A list of available spaces that entrepreneurs can use!
+    .col-md-4.col-md-4.portfolio-item
+      %a{href: "spaces"}
+        %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
+      %h3.black
+        %a{href: "spaces"} 
+          .black Y
+      %p.inset A list of available spaces that entrepreneurs can use!
     .row
-      .col-lg-12
-        %h1.page-header
-          Resources
-          %small 
+      .col-lg-4.col-md-4.portfolio-item
+        %a{href: "courses"}
+          %img=link_to(image_tag( "CUclass.jpg", :class => "img-responsive"),courses_path)
+        %h3
+          %a{href: "courses"} 
+            .black Courses
+        %p.inset Courses offered at the University of Colorado at Boulder relating to entrepreneurship.
+      .col-md-4.col-md-4.portfolio-item
+        %a{href: "student_groups"}
+          %img=link_to(image_tag("student_groups.jpg", :class => "img-responsive", :style => "height: 240px"), student_groups_path)
+        %h3
+          %a{href: "student_groups"} 
+            .black Student Groups
+        %p.inset Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+      .col-md-4.col-md-4.portfolio-item
+        %a{href: "#"}
+          %img=link_to(image_tag("nvc.png", :class => "img-responsive", :style => "height: 240px; width:360px;"), student_groups_path)
+        %h3
+          %a{href: "#project-three"}
+            .black Departments and Groups
+        %p.inset Lorem ipsum dolor sit amet, consectetur adipis
     .row
-      .col-lg-6.col-md-6.portfolio-item
-        %a{href: "#project-one"}
-          %img.img-responsive{src: "http://placehold.it/700x400"}/
+      .col-md-4.col-md-4.portfolio-item
+        %a{href: "#"}
+          %img=link_to(image_tag("startups2students.png", :class => "img-responsive", :style => "height: 240px; width:360px;"), '#')
         %h3
-          %a{href: "courses/index"} 
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-      .col-lg-6.col-md-6.portfolio-item
-        %a{href: "#project-two"}
-          %img.img-responsive{src: "http://placehold.it/700x400"}/
-        %h3
-          %a{href: "#project-two"} Student Groups
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    .row
-      .col-lg-6.col-md-6.portfolio-item
-        %a{href: "#project-three"}
-          %img.img-responsive{src: "http://placehold.it/700x400"}/
-        %h3
-          %a{href: "#project-three"} Departments and Groups
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-      .col-lg-6.col-md-6.portfolio-item
-        %a{href: "#project-four"}
-          %img.img-responsive{src: "http://placehold.it/700x400"}/
-        %h3
-          %a{href: "#project-four"} Project Four
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    .row
-      .col-lg-6.col-md-6.portfolio-item
-        %a{href: "#project-five"}
-          %img.img-responsive{src: "http://placehold.it/700x400"}/
-        %h3
-          %a{href: "#project-five"} Project Five
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-      .col-lg-6.col-md-6.portfolio-item
-        %a{href: "#project-six"}
-          %img.img-responsive{src: "http://placehold.it/700x400"}/
-        %h3
-          %a{href: "#project-six"} Project Six
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    %hr/
-    .row.text-center
-      .col-lg-12
-        %ul.pagination
-          %li
-            %a{href: "#"} «
-          %li.active
-            %a{href: "#"} 1
-          %li
-            %a{href: "#"} 2
-          %li
-            %a{href: "#"} 3
-          %li
-            %a{href: "#"} 4
-          %li
-            %a{href: "#"} 5
-          %li
-            %a{href: "#"} »
-    %hr/
-  / /.container
+          %a{href: "#project-three"}
+            .black Startups2Students
+        %p.inset Lorem ipsum dolor sit amet, consectetur adipis
+
+:javascript
+  $.backstretch("#{asset_path 'flatirons.jpg'}");

@@ -1,9 +1,6 @@
 / -@users.each do |user|
 /   -@client.user_timeline(user).each do |tweet|
-/     %ul
-    
-/       %h3=user
-/       %li=tweet.text
+/     -@text = tweet.text
 
 %a.twitter-timeline{"data-widget-id" => "446003144237916160", :href => "https://twitter.com/wellsauce/boulderstartups", :style => "float: left;"} 
 :javascript
