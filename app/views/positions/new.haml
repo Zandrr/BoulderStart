@@ -1,0 +1,4 @@
+- if current_user.student?
+  render 'student_add'
+- elsif current_user.company?
+  render 'company_add'
