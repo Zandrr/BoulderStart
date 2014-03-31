@@ -7,4 +7,12 @@ class User < ActiveRecord::Base
   has_many :positions
   has_many :categories
 
+    def student?
+   		self.type == 'student'
+	end
+
+	def company?
+		self.type == 'company'
+	end
+
 end
