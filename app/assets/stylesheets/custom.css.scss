@@ -1,6 +1,8 @@
 @import "bootstrap";
 
 $lightgrey: #999;
+$global-border-radius: 5px;
+$global-border-radius-sharp: 2px;
 
 // /* universal */
 
@@ -164,5 +166,50 @@ margin: 50px 0;
   opacity: .9;
 }
 
+
+/* User sign in and sign forms. */
+.border-form-div {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  margin-top: 30px;
+
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: $global-border-radius;
+     -moz-border-radius: $global-border-radius;
+          border-radius: $global-border-radius;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.border-form-div .form-signin-heading,
+.border-form-div .checkbox {
+  margin-bottom: 10px;
+}
+
+.border-form-div input {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+  min-width: 200px;
+}
+
+label.checkbox{
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#error_explanation{
+  & h2{
+    font-size: 18px;
+  }
+  & ul{
+    list-style: none;
+    padding: 0;
+    color: #C23200;
+  }
+}
 
 

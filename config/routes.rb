@@ -2,17 +2,9 @@ SampleApp::Application.routes.draw do
   get "twitter/index"
   get"twitter/user_tweet"
   devise_for :users
-  get "categories/index"
-  get "categories/show"
-  get "categories/edit"
-  get "categories/new"
-  get "positions/index"
-  get "positions/show"
-  get "positions/destroy"
-  get "positions/new"
-  get "positions/edit"
-  get "users/index"
-  get "users/show"
+  resources :positions
+  get "users", to: "users#index"
+  get "users/:id", to: "users#show", as: "user"
 
   resources :blogs
 
