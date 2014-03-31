@@ -6,6 +6,5 @@ class User < ActiveRecord::Base
 
   has_many :positions
   has_many :categories
-  
-  acts_as_taggable_on :tags, :categories, :skills, :interests 
+
 end
