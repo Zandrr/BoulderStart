@@ -5,11 +5,12 @@
     = f.email_field :email, :autofocus => true, :class => 'form-control', :placeholder => 'Email'
     = f.password_field :password, :class => 'form-control', :placeholder => 'Password'
     = f.password_field :password_confirmation, :class => 'form-control', :placeholder => 'Confirm Password'
+    = f.text_field :name, :class => 'form-control', :placeholder => 'Name'
     = f.url_field :website, :class => 'form-control', :placeholder => 'Website'
-    = f.url_field :twitter, :class => 'form-control', :placeholder => 'Twitter Handle'
+    = f.text_field :twitter, :class => 'form-control', :placeholder => 'Twitter Handle'
     = f.url_field :linkedin, :class => 'form-control', :placeholder => 'LinkedIn Url'
     = f.url_field :angellist, :class => 'form-control', :placeholder => 'AngelList Profile URL'
-    I'm A
-    = f.select :type, ['Student', 'Company'], :class => 'form-control'
+    I'm A 
+    = f.select :orgtype, [["Student", "Student"], ["Company", "Company"]], :prompt => 'Select One'
     = f.submit "Sign up", :class => 'btn btn-primary'
     = render "devise/shared/links"
