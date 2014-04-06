@@ -1,4 +1,5 @@
 SampleApp::Application.routes.draw do
+  get "funding/index"
   get "twitter/index"
   get"twitter/user_tweet"
   devise_for :users
