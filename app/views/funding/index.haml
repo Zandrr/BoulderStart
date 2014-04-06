@@ -1,0 +1,33 @@
+%body
+
+  %ul.nav.nav-pills
+    %li
+      %a{href: "/campus"}
+        %span.glyphicon.glyphicon-arrow-left.black
+    %li
+      =link_to 'All', funding_path, :class => 'black'
+    %li
+      =link_to 'Venture Capital', funding_path(:filter => 'VC'), :class => 'black'
+    %li
+      =link_to 'Microfinance & Grants', funding_path(:filter => 'MFG'), :class => 'black'
+    %li
+      =link_to 'Angels, MicroVC & Seed Funding', funding_path(:filter => 'AMS'), :class => 'black'
+
+
+
+.container-fluid
+  .row-fluid
+    .col-lg-12
+      %h1.page-header
+        Funding
+  -@funding.each do |f|
+    .col-md-6.portfolio-item
+      %h3
+        .black=f.name
+      %img.img-responsive{src: f.photo }
+      %h4
+        .black=f.description
+
+  / /.container
+:javascript
+  $.backstretch("#{asset_path 'flatirons.jpg'}");

@@ -21,7 +21,7 @@ class PositionsController < ApplicationController
     @position = Position.create(position_params)
     @position.skill_list = (params['position']['skills'])
     @position.user_id = current_user.id
-    # debugger
+    # raise
 
    
       if @position.save

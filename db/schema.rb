@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140315200404) do
+ActiveRecord::Schema.define(version: 20140403191600) do
 
   create_table "blogs", force: true do |t|
     t.datetime "created_at"
@@ -35,6 +35,16 @@ ActiveRecord::Schema.define(version: 20140315200404) do
   end
 
   create_table "events", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "fundings", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "photo"
+    t.string   "website"
+    t.string   "funding_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
