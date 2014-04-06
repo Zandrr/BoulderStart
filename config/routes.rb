@@ -1,11 +1,12 @@
 SampleApp::Application.routes.draw do
-  get "funding/index"
   get "twitter/index"
   get"twitter/user_tweet"
   devise_for :users
   resources :positions
   get "users", to: "users#index"
   get "users/:id", to: "users#show", as: "user"
+
+
 
   resources :blogs
 
@@ -15,18 +16,16 @@ SampleApp::Application.routes.draw do
 
   resources :student_groups
 
-
-get "courses/new"
-get "courses/index"
-root 'static_pages#home'
-match '/resources',    to: 'static_pages#resources', via: 'get'
-match '/blog',   to: 'static_pages#blog', via: 'get'
-match '/contact', to: 'static_pages#contact', via: 'get'
-match '/campus',    to: 'static_pages#campus', via: 'get'
-match '/courses', to: 'courses#index', via:'get'
-match '/funding', to: 'funding#index', via:'get'
-match '/OffCampus', to: 'static_pages#OffCampus', via: 'get'
-match '/embeddedCal', to: 'events#embeddedCal', via: 'get'
+  get "courses/new"
+  get "courses/index"
+  root 'static_pages#home'
+  match '/resources',    to: 'static_pages#resources', via: 'get'
+  match '/blog',   to: 'static_pages#blog', via: 'get'
+  match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/campus',    to: 'static_pages#campus', via: 'get'
+  match '/courses', to: 'courses#index', via:'get'
+  match '/OffCampus', to: 'static_pages#OffCampus', via: 'get'
+  match '/embeddedCal', to: 'events#embeddedCal', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
