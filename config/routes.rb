@@ -1,4 +1,8 @@
 SampleApp::Application.routes.draw do
+  get "providers/index"
+  get "provider/index"
+  get "entity/index"
+  get "entity/show"
   get "funding/index"
   get "twitter/index"
   get"twitter/user_tweet"
@@ -19,7 +23,11 @@ SampleApp::Application.routes.draw do
 
   get "courses/new"
   get "courses/index"
+  get "spaces/pivotdesk"
   root 'static_pages#home'
+  match '/providers', to: 'providers#index', via: 'get'
+  match '/funding', to: 'funding#index', via: 'get'
+  match 'entity', to: 'entity#index', via: 'get'
   match '/resources',    to: 'static_pages#resources', via: 'get'
   match '/blog',   to: 'static_pages#blog', via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'

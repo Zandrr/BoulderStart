@@ -21,20 +21,20 @@
         %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
       %h3.black 
         %a{href: "spaces"} 
-          .black Spaces
+          .black Spaces & Accelerators
       %p.inset A list of available spaces that entrepreneurs can use!
     .col-md-4.col-md-4.portfolio-item
-      %a{href: "spaces"}
-        %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
+      %a{href: "providers"}
+        %img=link_to(image_tag( "providers.jpg", :class => "img-responsive"),providers_path)
       %h3.black
-        %a{href: "spaces"} 
+        %a{href: "providers"} 
           .black Service Providers
       %p.inset Lorem ipsum dolor sit amet, consectetur adipis
     .col-md-4.col-md-4.portfolio-item
-      %a{href: "spaces"}
-        %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
+      %a{href: "funding"}
+        %img=link_to(image_tag( "funding.jpg", :class => "img-responsive"),funding_path)
       %h3.black
-        %a{href: "spaces"} 
+        %a{href: "funding"} 
           .black Funding
       %p.inset Lorem ipsum dolor sit amet, consectetur adipis
   .row
@@ -44,6 +44,13 @@
       %h3
         %a{href: "#project-three"}
           .black Startups2Students
+      %p.inset Lorem ipsum dolor sit amet, consectetur adipis
+    .col-md-4.col-md-4.portfolio-item
+      %a{href: "entity"}
+        %img=link_to(image_tag("entity.jpg", :class => "img-responsive", :style => "height: 240px; width:360px;"), entity_path)
+      %h3
+        %a{href: "entity"}
+          .black Business Development Entities
       %p.inset Lorem ipsum dolor sit amet, consectetur adipis
 
 :javascript

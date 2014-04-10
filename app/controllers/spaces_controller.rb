@@ -6,12 +6,17 @@ class SpacesController < ApplicationController
   # GET /spaces.json
   def index
     @spaces = Space.getspace
-    #raise 
+    if params.has_key?(:filter)
+      @space = Space.find_all_by_space_type(params[:filter])
+  else
+      @space = Space.all
+    end
   end
 
   # GET /spaces/1
   # GET /spaces/1.json
   def show
+    @spaces = Space.getspace
   end
 
   # GET /spaces/new
@@ -61,6 +66,10 @@ class SpacesController < ApplicationController
       format.html { redirect_to spaces_url }
       format.json { head :no_content }
     end
+  end
+
+  def pivotdesk
+    @spaces = Space.getspace
   end
 
   private

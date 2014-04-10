@@ -1,0 +1,21 @@
+%body
+  %ul.nav.nav-pills
+    %li
+      %a{href: "/resources"}
+        %span.glyphicon.glyphicon-arrow-left.black
+  .container-fluid
+    .row-fluid
+      .col-lg-12
+        %h1.page-header
+          Business Development Entities
+    -@entity.each do |f|
+      .col-md-6.portfolio-item
+        %h3
+          .black=f.name
+        %img.img-responsive{src: f.photo }
+        %h4
+          .black=f.description
+
+    / /.container
+  :javascript
+    $.backstretch("#{asset_path 'flatirons.jpg'}");

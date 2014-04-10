@@ -1,26 +1,34 @@
 %body
 
-  %ul.nav.pull-left
+  %ul.nav.nav-pills
     %li
-  %a{href: "/campus"}
-    %span.glyphicon.glyphicon-arrow-left.black
-      .black Back
+      %a{href: "/resources"}
+        %span.glyphicon.glyphicon-arrow-left.black
+    %li
+      =link_to 'All', spaces_path, :class => 'black'
+    %li
+      =link_to 'Accelerators', spaces_path(:filter => 'accelerator'), :class => 'black'
+    %li
+      =link_to 'Co-Working Spaces', spaces_path(:filter => 'space'), :class => 'black'
+    %li
+      =link_to 'Spaces Available Now', 'spaces/pivotdesk', :class => 'black'
+
+
+
 
 .container-fluid
   .row-fluid
     .col-lg-12
       %h1.page-header
         Spaces
-  -@spaces.each do |f|
+  -@space.each do |f|
     .col-md-6.portfolio-item
       %h3
-        .black=f[0]
-      %img.img-responsive{src: f[1] }
+        .black=f.name
+      %img.img-responsive{src: f.photo }
       %h4
-        .black=f[2]
-%h1
-  .black Powered by
-  =link_to image_tag("https://d22eps1db7swyg.cloudfront.net/assets/logo-5beae2941b96ca39fdfe3c9ae48aa277.png"), 'https://www.pivotdesk.com/'
+        .black=f.description
+
   / /.container
 :javascript
   $.backstretch("#{asset_path 'flatirons.jpg'}");

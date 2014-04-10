@@ -1,2 +1,17 @@
-/ -current_user.positions.each do |position|
-/   =position.skill_list\
+.row
+  .col-md-4
+    %h3 Skills
+    -@skills.each do |skill|
+      %ul
+        %li.list-unstyled=skill
+  .col-md-4
+    %h3 Interests
+    -@interests.each do |interest|
+      %ul
+        %li.list-unstyled=interest
+  .col-md-4
+    %h3 Categories
+    -@categories.each do |category|
+      %ul
+        %li.list-unstyled=category
+

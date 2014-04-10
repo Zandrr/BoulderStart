@@ -1,0 +1,36 @@
+%body
+
+  %ul.nav.nav-pills
+    %li
+      %a{href: "/resources"}
+        %span.glyphicon.glyphicon-arrow-left.black
+    %li
+      =link_to 'All', providers_path, :class => 'black'
+    %li
+      =link_to 'Legal', providers_path(:filter => 'legal'), :class => 'black'
+    %li
+      =link_to 'Development & Design Shops', providers_path(:filter => 'design'), :class => 'black'
+    %li
+      =link_to 'Marketing', providers_path(:filter => 'marketing'), :class => 'black'
+    %li
+      =link_to 'Finance & Accounting', providers_path(:filter => 'accounting'), :class => 'black'
+
+
+
+
+.container-fluid
+  .row-fluid
+    .col-lg-12
+      %h1.page-header
+        Providers
+  -@providers.each do |f|
+    .col-md-6.portfolio-item
+      %h3
+        .black=f.name
+      %img.img-responsive{src: f.photo }
+      %h4
+        .black=f.description
+
+  / /.container
+:javascript
+  $.backstretch("#{asset_path 'flatirons.jpg'}");

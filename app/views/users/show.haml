@@ -1,3 +1,7 @@
--current_user.positions.each do |position|
-  =position.title
-  =position.skill_list
+-if current_user.positions.empty?
+  =link_to "Add some skills and interests!", new_position_path
+-else
+  -current_user.positions.each do |position|
+    =position.title
+    =position.skill_list
+
