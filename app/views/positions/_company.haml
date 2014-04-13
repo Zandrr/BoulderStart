@@ -1,0 +1,26 @@
+%h1 Add Skills and Interests
+=form_for :position, url: positions_path do |f|
+  .col-md-4.col-md-offset-4
+    %div
+      =f.label :position_title
+      %br
+      =f.text_field :title
+    %div
+      =f.label :position_description
+      %br
+      =f.text_area :description
+    %div
+      =f.label :preferred_skills
+      %br
+      =f.text_field :skills
+      %br
+    %div
+      =f.label :preferred_major
+      %br
+      =f.text_field :categories
+    %div
+      =f.label :currently_looking
+      %br
+      =f.select :looking, [['Yes', true], ['No', false]]
+    %div
+      = f.submit "Add", :class => 'btn btn-primary'

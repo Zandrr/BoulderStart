@@ -2,7 +2,12 @@ class PositionsController < ApplicationController
 
 
   def index
-     
+      @user = User.where(:orgtype => "Company")
+      @positions = []
+        @user.each do |user|
+          @positions << user.positions
+        end
+
   end
 
   def show
@@ -38,7 +43,6 @@ end
       else
         render @position.errors
       end
-      # -raise
   end
 
   def position_params

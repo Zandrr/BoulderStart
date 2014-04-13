@@ -1,7 +1,7 @@
--if current_user.positions.empty?
-  =link_to "Add some skills and interests!", new_position_path
--else
-  -current_user.positions.each do |position|
-    =position.title
-    =position.skill_list
+%ul.nav.nav-pills.pull-left
+  %li
+    =link_to "Edit my Profile", edit_user_registration_path
+  %li
+    =link_to "View Available Positions", positions_path
+
 

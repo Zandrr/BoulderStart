@@ -12,14 +12,17 @@ SampleApp::Application.routes.draw do
   get "users/:id", to: "users#show", as: "user"
 
 
-
+ resources :users do
   resources :blogs
+end
 
   resources :events
 
   resources :spaces
 
   resources :student_groups
+
+
 
   get "courses/new"
   get "courses/index"
@@ -29,7 +32,7 @@ SampleApp::Application.routes.draw do
   match '/funding', to: 'funding#index', via: 'get'
   match 'entity', to: 'entity#index', via: 'get'
   match '/resources',    to: 'static_pages#resources', via: 'get'
-  match '/blog',   to: 'static_pages#blog', via: 'get'
+  match '/blog',   to: 'blogs#index', via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
   match '/campus',    to: 'static_pages#campus', via: 'get'
   match '/courses', to: 'courses#index', via:'get'

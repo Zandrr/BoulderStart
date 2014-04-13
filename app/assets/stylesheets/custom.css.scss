@@ -6,6 +6,11 @@ $global-border-radius-sharp: 2px;
 
 // /* universal */
 
+.column{
+  display: inline-block;
+  vertical-align: top;
+}
+
 
 
 html {
@@ -89,6 +94,8 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: $lightgrey;
+  position: absolute;
+  }
 
 
 	a {
@@ -111,7 +118,7 @@ footer {
 		  margin-left: 10px;
 		}
 	}	
-}
+
 
 body {
 margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
@@ -141,7 +148,10 @@ margin: 50px 0;
   max-height: 530px;
 }
 
-
+.custom{
+  display: inline-block;
+  vertical-align: top;
+}
 
 .inset{
 

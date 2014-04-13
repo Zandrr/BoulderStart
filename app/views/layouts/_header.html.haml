@@ -3,7 +3,7 @@
     .container
       = link_to "Boulder Startups", root_path, id: "logo"
       %ul.nav.navbar-nav.navbar-right
-        %li=link_to "Blogs", blogs_path, :class => 'black'
+        %li=link_to "Blogs", blog_path, :class => 'black'
         %li= link_to "Events", events_path, :class => 'black'
         %li= link_to "Resources", resources_path, :class => 'black'
         - if user_signed_in?

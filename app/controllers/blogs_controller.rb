@@ -15,11 +15,23 @@ class BlogsController < ApplicationController
       
       @users = ["PivotDesk", "GnipEng", "SiliconFlatiron"]
 
+    @posts = []
+    @user = User.all
+    @user.each do |user|
+      user.blogs.each do |post|
+        @posts << post
+      end
+    end
+    @posts = @posts.sort_by {|post| post.created_at }.reverse
+
+
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+
+    
   end
 
   # GET /blogs/new
@@ -34,13 +46,15 @@ class BlogsController < ApplicationController
   # POST /blogs
   # POST /blogs.json
   def create
-    @blog = Blog.new(blog_params)
+    @blog = Blog.create(blog_params)
+    @blog.user_id = current_user.id
 
     respond_to do |format|
       if @blog.save
-        format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
+        format.html { redirect_to user_blogs_path, notice: 'Blog was successfully created.' }
         format.json { render action: 'show', status: :created, location: @blog }
       else
+        -raise
         format.html { render action: 'new' }
         format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
@@ -79,6 +93,6 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params[:blog]
+      params.require(:blog).permit(:content, :title)
     end
 end
