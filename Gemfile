@@ -12,7 +12,6 @@ gem 'acts-as-taggable-on'
 gem 'sprockets', '2.11.0'
 gem "jqcloud-rails"
 gem "debugger", "~> 1.6.6"
-gem 'rails_12factor', group: :production
 
 
 group :development, :test do
