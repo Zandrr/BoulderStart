@@ -88,7 +88,6 @@ student_groups = [
 
 
 ]
-
 funding = [
 
 ["Access Venture Partners","Access Venture Partners is an early stage venture capital fund. Together over the past 14 years, the partners at Access Venture Partners have invested in over fifty early stage companies and have served as founders and early executives of numerous companies. Through this experience we have built an understanding of how to navigate the challenges associated with building successful companies and drive them to success.","/assets/AccessVenturePartners.png","http://www.accessvp.com/index.php", "VC"],

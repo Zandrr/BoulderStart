@@ -1,5 +1,5 @@
 %h1 Sign up
-= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :multipart => true }) do |f|
   = devise_error_messages!
   .border-form-div
     = f.email_field :email, :autofocus => true, :class => 'form-control', :placeholder => 'Email'
@@ -10,7 +10,10 @@
     = f.text_field :twitter, :class => 'form-control', :placeholder => 'Twitter Handle'
     = f.url_field :linkedin, :class => 'form-control', :placeholder => 'LinkedIn Url'
     = f.url_field :angellist, :class => 'form-control', :placeholder => 'AngelList Profile URL'
-    I'm A 
+    I'm a 
     = f.select :orgtype, [["Student", "Student"], ["Company", "Company"]], :prompt => 'Select One'
+    %br
+    = f.file_field :avatar, :class => 'form-control'
     = f.submit "Sign up", :class => 'btn btn-primary'
+    %br
     = render "devise/shared/links"

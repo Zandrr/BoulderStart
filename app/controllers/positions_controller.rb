@@ -2,22 +2,15 @@ class PositionsController < ApplicationController
 
 
   def index
-      @user = User.where(:orgtype => "Company")
-      @positions = []
-        @user.each do |user|
-          @positions << user.positions
-        end
-
+      @positions = Position.joins(:user).where(:users => {:orgtype => "Company"})
   end
 
   def show
-
-
-current_user.positions.each do |position|
-  @skills = position.skill_list
-  @interests = position.interest_list
-  @categories = position.category_list
-end
+      current_user.positions.each do |position|
+      @skills = position.skill_list
+      @interests = position.interest_list
+      @categories = position.category_list
+  end
 
 
 

@@ -1,0 +1,12 @@
+.media.position-pane
+  %a.pull-left
+    %img.media-object{alt: "...", src: position.user.avatar(:thumb)}
+  .media-body
+    %h4.media-heading
+      = link_to position.title + " at " + position.user.name, position_path(position)
+    = position.description
+    .skills
+      Skills: 
+      - position.skills.each do |skill|
+        = skill.name
+

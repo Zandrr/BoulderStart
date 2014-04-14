@@ -5,7 +5,7 @@ SampleApp::Application.routes.draw do
   get "entity/show"
   get "funding/index"
   get "twitter/index"
-  get"twitter/user_tweet"
+  get "twitter/user_tweet"
   devise_for :users
   resources :positions
   get "users", to: "users#index"
