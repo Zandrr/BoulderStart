@@ -1,4 +1,14 @@
+<<<<<<< Updated upstream
 %h2=link_to "My Profile", user_path(current_user.id)
 %h3 Position Title
 -@positions[0].each do |position|
   %li=position.title
+=======
+-if !current_user.nil?
+  %h2=link_to "My Profile", user_path(current_user.id)
+  %h3 Position Title
+  -@positions[0].each do |position|
+    %li=position.title
+-else
+  %h2=link_to "Sign In", user_session_path
+>>>>>>> Stashed changes
