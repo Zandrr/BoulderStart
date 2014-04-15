@@ -2,7 +2,11 @@ class PositionsController < ApplicationController
 
 
   def index
+    if current_user.student?
       @positions = Position.joins(:user).where(:users => {:orgtype => "Company"})
+    else
+      @positions = Position.joins(:user).where(:users => {:orgtype =>"Student"})
+    end
   end
 
   def show
