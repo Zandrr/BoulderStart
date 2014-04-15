@@ -6,13 +6,10 @@ $global-border-radius-sharp: 2px;
 
 // /* universal */
 
-.column{
-  display: inline-block;
-  vertical-align: top;
+.text{
+  padding: 5% 20% 20% 20%;
+  display: block;
 }
-
-
-
 html {
 	overflow-y:scroll;
 }
@@ -74,16 +71,27 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #181818;
+  font-family: serif;
+  color: white;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   padding-top: 9px;
-  font-weight: bold;
+  font-weight: 300;
   line-height: 1;
 	&:hover {
 	  color: $lightgrey;
 	  text-decoration: none;
 	}
+}
+
+header li {
+  font-family: serif;
+  font-size: 1.3em;
+  color: white;
+  &:hover {
+    color: $lightgrey;
+    text-decoration: none;
+  }
 }
 
 // /* footer */
@@ -153,12 +161,6 @@ margin: 50px 0;
   vertical-align: top;
 }
 
-.inset{
-
-  color: white;
-  font-size: 18px;
-  line-height:30px;
-}
 
 .black{
   color: #181818;

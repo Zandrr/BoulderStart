@@ -8,13 +8,13 @@ class StaticPagesController < ApplicationController
   def blog
   end
 
-  def contact
-  end
-
   def campus
   end
 
   def OffCampus
+  end
+
+  def contactus
   end
   
 end
