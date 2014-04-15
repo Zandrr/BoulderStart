@@ -32,7 +32,7 @@ class PositionsController < ApplicationController
     @position.user_id = current_user.id
 
       if @position.save
-          redirect_to @position
+          redirect_to user_path(@position.user)
       else
         render @position.errors
       end

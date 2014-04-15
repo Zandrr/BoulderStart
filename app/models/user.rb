@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   has_many :categories, dependent: :destroy
   has_many :blogs, dependent: :destroy
 
-    def student?
+  def student?
    		self.orgtype == 'Student'
 	end
 

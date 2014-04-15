@@ -15,7 +15,8 @@ module NavigationHelpers
 
     when /^the sign up page$/ then '/users/sign_up'
     when /^the new positions page$/ then '/positions/new'
-
+    when /^(.*)'s profile page$/i
+        user_path(User.find_by_email($1))
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
