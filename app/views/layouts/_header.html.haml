@@ -8,5 +8,6 @@
         %li= link_to "Resources", resources_path, :class => 'black'
         - if user_signed_in?
           %li= link_to 'Logout', destroy_user_session_path, :method => :delete, :class => 'black'
+          %li= link_to 'Profile', user_path(current_user.id), :class => 'black'
         - else
           %li= link_to 'Login', new_user_session_path, :class => 'black'
