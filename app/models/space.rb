@@ -8,7 +8,9 @@ class Space < ActiveRecord::Base
 			name = space['company']['name']
 			photo_url = space['photos'].first[1]['listing_full']
 			address = space['address']['address_1']
-			spaces_array << [name, photo_url, address]
+			description = space['description']
+			url = space['url']
+			spaces_array << [name, photo_url, address, description, url]
 		end
 		spaces_array
 	end

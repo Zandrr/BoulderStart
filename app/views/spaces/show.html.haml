@@ -2,25 +2,44 @@
 
   %ul.nav.pull-left
     %li
-  %a{href: "/campus"}
+  %a{href: "/spaces"}
     %span.glyphicon.glyphicon-arrow-left.black
       .black Back
 
+/ .container-fluid
+/   .row-fluid
+/     .col-lg-12
+/       %h1.page-header
+/         Spaces
+/   -@spaces.each do |f|
+/     .col-md-6.portfolio-item
+/       %h3
+/         .black=f[0]
+/       %img.img-responsive{src: f[1] }
+/       %h4
+/         .black=f[2]
 .container-fluid
   .row-fluid
     .col-lg-12
       %h1.page-header
-        Spaces
+        ="Spaces"
   -@spaces.each do |f|
+    -@count = @count+1
     .col-md-6.portfolio-item
-      %h3
-        .black=f[0]
-      %img.img-responsive{src: f[1] }
-      %h4
-        .black=f[2]
-%h1
-  .black Powered by
-  =link_to image_tag("https://d22eps1db7swyg.cloudfront.net/assets/logo-5beae2941b96ca39fdfe3c9ae48aa277.png"), 'https://www.pivotdesk.com/'
-  / /.container
-:javascript
-  $.backstretch("#{asset_path 'flatirons.jpg'}");
+      #accordion.panel-group
+      .panel.panel-default
+        .panel-heading=f[0]
+        %h2.panel-title
+          %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{@count}"}
+            .item=image_tag(f[1])
+        .panel-collapse.collapse{:id => "collapse#{@count}"}
+          .panel-body
+            %label Description:
+            %h5.website= link_to "See the Space!",  f[4]
+            %p=f[3]
+            %p="Address:"
+            =f[2]
+%h1 
+  ="Powered by"
+  %br
+  =link_to image_tag("pivotdesk.png"), 'https://www.pivotdesk.com/'

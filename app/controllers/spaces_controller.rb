@@ -5,7 +5,6 @@ class SpacesController < ApplicationController
   # GET /spaces
   # GET /spaces.json
   def index
-    @spaces = Space.getspace
     if params.has_key?(:filter)
       @things = Space.find_all_by_space_type(params[:filter])
   else
@@ -19,6 +18,7 @@ class SpacesController < ApplicationController
   # GET /spaces/1.json
   def show
     @spaces = Space.getspace
+     @count = 0
   end
 
   # GET /spaces/new
