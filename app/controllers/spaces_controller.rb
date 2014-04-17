@@ -7,10 +7,12 @@ class SpacesController < ApplicationController
   def index
     @spaces = Space.getspace
     if params.has_key?(:filter)
-      @space = Space.find_all_by_space_type(params[:filter])
+      @things = Space.find_all_by_space_type(params[:filter])
   else
-      @space = Space.all
+      @things = Space.all
     end
+    @count = 0
+    @title = "Spaces & Accelerators"
   end
 
   # GET /spaces/1

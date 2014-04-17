@@ -1,0 +1,19 @@
+.container-fluid
+  .row-fluid
+    .col-lg-12
+      %h1.page-header
+        =@title
+  -@things.each do |f|
+    -@count = @count+1
+    .col-md-6.portfolio-item
+      #accordion.panel-group
+      .panel.panel-default
+        .panel-heading=f.name
+        %h2.panel-title
+          %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{@count}"}
+            .item=image_tag(f.photo)
+        .panel-collapse.collapse{:id => "collapse#{@count}"}
+          .panel-body
+            %label Description
+            %h5.website= link_to "Website",  f.website
+            %p=f.description

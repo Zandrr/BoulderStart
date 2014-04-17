@@ -2,14 +2,16 @@ class FundingController < ApplicationController
   def index
 
   	if params.has_key?(:filter)
-	  	@funding = Funding.find_all_by_funding_type(params[:filter])
-	  	@current_funding = Funding.find_by_funding_type(params[:filter]).funding_type
-	else
-  		@funding = Funding.all.asc
-  	end
+	  	@things = Funding.find_all_by_funding_type(params[:filter])
+	 else
+  		@things = Funding.all.asc
+      @count = 0
+    end
+    @title = "Funding"
+  end
+
 
   def show
 
-  end
   end
 end
