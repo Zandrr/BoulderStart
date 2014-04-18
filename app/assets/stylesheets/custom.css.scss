@@ -85,7 +85,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  font-family: serif;
+  font-family: sans-serif;
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -99,9 +99,11 @@ p {
 }
 
 header li {
-  font-family: serif;
-  font-size: 1.3em;
+  font-family: sans-serif;
+  font-size: 1.0em;
   color: white;
+  text-transform: uppercase;
+
   &:hover {
     color: $lightgrey;
     text-decoration: none;
@@ -160,11 +162,9 @@ margin: 50px 0;
 }
 .panel-title{
   text-decoration: none;
+  color:black;
 }
 
-.container .banner{
-  width:1200px;
-}
 
 .constant img {
   display: block;
@@ -193,6 +193,7 @@ margin: 50px 0;
 
 .panel.panel-default{
   opacity: .75;
+  color:$lightgrey;
 }
 .navbar-fixed-top{
   opacity: .9;

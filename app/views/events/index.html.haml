@@ -18,18 +18,17 @@
       .col-md-6.portfolio-item
         #accordion.panel-group
         .panel.panel-default
-          .panel-heading
-            %h4.panel-title
-              %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{@count}"}
-                %h3=f[0]
-                %p=f[2]
-          .panel-collapse.collapse{:id => "collapse#{@count}"}
-            .panel-body
-              %label Start Time:
+          %h4.panel-title
+            %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{@count}"}
+              %h3=f[0]
               %p=f[2]
-              %label End Time:
-              %p=f[3]
-              %label Location:
-              %p=f[4]
-              %label Description:
-              %small=f[1]
+        .panel-collapse.collapse{:id => "collapse#{@count}"}
+          .panel-body
+            %label Start Time:
+            %p=f[2]
+            %label End Time:
+            %p=f[3]
+            %label Location:
+            %p=f[4]
+            %label Description:
+            %small=f[1]
