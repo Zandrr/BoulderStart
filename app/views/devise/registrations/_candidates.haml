@@ -1,0 +1,18 @@
+%h1 Candidates
+%h3 Just fill out this simple form and watch your email!
+= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :multipart => true }) do |f|
+  = devise_error_messages!
+  .border-form-div
+    %h4 Create a candidate account
+    = f.email_field :email, :autofocus => true, :class => 'form-control', :placeholder => 'Email'
+    = f.text_field :name, :class => 'form-control', :placeholder => 'Name'
+    = f.url_field :website, :class => 'form-control', :placeholder => 'Personal Website or Blog'
+    = f.text_field :twitter, :class => 'form-control', :placeholder => 'Twitter Handle'
+    = f.url_field :linkedin, :class => 'form-control', :placeholder => 'LinkedIn Url'
+    = f.url_field :github, :class => 'form-control', :placeholder => 'Github Profile URL'
+    = f.hidden_field :orgtype, {value: "candidate"}
+    Upload a resume
+    = f.file_field :avatar, :class => 'form-control'
+    = f.submit "Send to Companies", :class => 'btn btn-primary' 
+    %br
+    = render "devise/shared/links"
