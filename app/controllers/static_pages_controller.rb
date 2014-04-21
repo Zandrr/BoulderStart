@@ -16,5 +16,8 @@ class StaticPagesController < ApplicationController
 
   def contactus
   end
+
+  def startups2students
+  end
   
 end

@@ -9,6 +9,7 @@
   -else
     %li
       =link_to "Edit my skills/interests/major", edit_position_path
-=image_tag current_user.avatar.url(:medium)
+=link_to "Download", current_user.avatar.url(:original, false)
+
 
 
