@@ -185,6 +185,9 @@ margin: 50px 0;
   color: #181818;
   font-size: 20px
 }
+.darken {
+  color: black;
+}
 
  a .item img{
   width:300px;
@@ -250,6 +253,171 @@ label.checkbox{
   background-color: rgb(214, 214, 214);
   padding: 10px;
   border-radius: 10px;
+}
+
+
+
+
+/*startups2students home page */
+/* Main
+--------------------------------------------- */
+
+#main {
+    background-color: #333333;
+    color: #f8f8f8;
+}
+
+#main.web {
+    height: 502px;
+    position: relative;
+}
+
+#main h1 {
+    font-weight: 100;
+    font-size: 54px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    text-align: center;
+    float: center;
+    opacity: 1;
+}
+
+.wf-active #main h1 {
+    margin: 0;
+    opacity: 1;
+}
+
+#main.web .callout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: -70px;
+}
+
+#main .primaryButton {
+color: #f8f8f8;
+font-size: 16px;
+opacity: 1;
+margin-left: 25px;
+margin-right: 25px;
+}
+
+.wf-active #main .primaryButton {
+    opacity: 1;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+#howitworks {
+    padding: 100px 0 50px 0;
+    margin: 0 auto;
+}
+
+#howitworks img {
+    padding-bottom: 30px;
+}
+
+.smallType {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.primaryButton {
+    padding: 14px 30px;
+    display: inline-block;
+    margin: 26px 0 0 0;
+}
+
+.primaryButton:hover {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.borderButton {
+    border: 1px solid rgba(244,244,244,.9);
+}
+
+.borderButton:hover {
+    background-color: rgba(0,0,0,.1);
+     transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.sectionTitle {
+    font-style: normal;
+    color: #333;
+    font-weight: 300;
+    font-size: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    float: center;
+    opacity: 1;
+}
+
+.explanatory {
+  max-width: 660px;
+  margin: 0 auto;
+  color: #333;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 20px;
+  font: sans-serif;
+  text-align:center;
+}
+
+
+#constituents {
+    padding: 0 0 100px 0;
+    max-width: 600px;
+}
+
+#constituents > div {
+    float: left;
+    width: 300px;
+    padding: 0 30px;
+}
+
+#constituents img {
+    padding: 0 0 14px 0;
+}
+
+#constituents .type {
+    color: #635f7d;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#constituents .plug {
+    color: #555;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.column {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 
