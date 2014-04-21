@@ -165,7 +165,7 @@ connecting clients to other valuable small business resources.","/assets/SBDC.pn
 
 
 
-["TiE Rockies","TiE Rockies is a chapter of TiE Global. We are one of 64 chapters in 18 countires with over 13,000 members. The mission and purpose of TiE Rockies is the same as TiE Global's, which is 'To Support the Entrepreneur' via our award-winning Mentoring Program, education, and networking. We have two levels of membership: Charter Membership and General Membership. Charter Membership is an exclusive, invitation-only club of successful business people focused on helping and supporting each other and the General Members. General Membership is open to all and TiE Rockies offers General Members over 100 programs each year designed to support their businesses and careers.","/assets/TIE.PNG","https://rockies.tie.org/"],
+["TiE Rockies","TiE Rockies is a chapter of TiE Global. We are one of 64 chapters in 18 countires with over 13,000 members. The mission and purpose of TiE Rockies is the same as TiE Global's, which is 'To Support the Entrepreneur' via our award-winning Mentoring Program, education, and networking. We have two levels of membership: Charter Membership and General Membership. Charter Membership is an exclusive, invitation-only club of successful business people focused on helping and supporting each other and the General Members. General Membership is open to all and TiE Rockies offers General Members over 100 programs each year designed to support their businesses and careers.","TIE.PNG","https://rockies.tie.org/"],
 
 
 
