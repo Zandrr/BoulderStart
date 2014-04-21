@@ -1,0 +1,25 @@
+#main.web
+  .callout{style: "opacity: 1; top: 251px;"}
+    %h1 Apply to Boulder's top startups in 60 seconds.
+    .col-md-4.col-md-offset-2
+      %a
+        =link_to  "For Candidates", new_user_registration_path(:orgtype => 'candidates'), :class => "primaryButton smallType borderButton"
+    .col-md-4.col-md-offset-1
+      %a
+        =link_to  "For Startups", new_user_registration_path(:orgtype => 'companies'), :class => "primaryButton smallType borderButton"
+
+#howitworks
+  .sectionTitle How It Works
+  %p.explanatory
+    You’re looking for a job at a startup in Boulder.
+    You submit your resume to Startups2Students. We share it with well-known Boulder startup founders
+    and hiring managers. They, in turn, reach out to you if they feel there's a fit.
+  %br
+  %br
+  #constituents.column.cf
+    %div
+      .type Candidates
+      .plug Put your resume in front of the best technology companies in Boulder.
+    %div
+      .type Startups
+      .plug Get a first look at the best technical and non-technical free agents in Boulder.

@@ -10,8 +10,10 @@
     = f.text_field :twitter, :class => 'form-control', :placeholder => 'Twitter Handle'
     = f.url_field :linkedin, :class => 'form-control', :placeholder => 'LinkedIn Url'
     = f.url_field :github, :class => 'form-control', :placeholder => 'Github Profile URL'
+    = f.select :discipline, ['Technical', 'Non-Technical']
     = f.hidden_field :orgtype, {value: "candidate"}
-    Upload a resume
+    %br
+    .center="Upload a resume"
     = f.file_field :avatar, :class => 'form-control'
     = f.submit "Send to Companies", :class => 'btn btn-primary' 
     %br

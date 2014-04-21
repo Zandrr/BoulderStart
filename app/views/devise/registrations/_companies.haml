@@ -11,4 +11,5 @@
         = f.url_field :website, :class => 'form-control', :placeholder => 'Website'
         = f.hidden_field :orgtype, {value: "startup"}
         = f.submit "Sign up", :class => 'btn btn-primary'
+        %br
         = render "devise/shared/links"
