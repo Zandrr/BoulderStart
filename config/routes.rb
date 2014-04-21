@@ -6,10 +6,11 @@ SampleApp::Application.routes.draw do
   get "funding/index"
   get "twitter/index"
   get "twitter/user_tweet"
-  devise_for :users
   resources :positions
   get "users", to: "users#index"
   get "users/:id", to: "users#show", as: "user"
+
+  devise_for :users, controllers: { registrations: "registrations" }
 
 
  resources :users do
