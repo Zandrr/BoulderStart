@@ -12,6 +12,6 @@
           .item=image_tag(f.photo)
       .panel-collapse.collapse{:id => "collapse#{@count}"}
         .panel-body
+          %h3.website=link_to "#{f.name}", f.website
           %label Description:
-          %h5.website= link_to "Website",  f.website
           %p=f.description
