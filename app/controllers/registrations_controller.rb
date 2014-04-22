@@ -6,6 +6,7 @@ class RegistrationsController < Devise::RegistrationsController
   def create
     super
     CompanyMailer.resume_message(@user).deliver unless @user.invalid?
+    binding.pry
   end
 
   def update

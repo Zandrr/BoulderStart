@@ -14,6 +14,8 @@ gem "jqcloud-rails"
 gem "debugger", "~> 1.6.6"
 gem "paperclip", "~> 4.1"
 gem 'activeadmin', github: 'gregbell/active_admin'
+gem "sendgrid-rails"
+
 
 
 group :development, :test do
@@ -21,6 +23,7 @@ group :development, :test do
   gem 'rspec-rails', '2.13.1'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'pry'
 end
 
 group :test do

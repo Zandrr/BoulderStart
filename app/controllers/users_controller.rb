@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
   def index
+  	@candidates = User.find_all_by_discipline(params[:filter])
+  	raise
   end
 
   def show
