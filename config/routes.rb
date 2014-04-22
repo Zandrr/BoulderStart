@@ -40,6 +40,7 @@ end
   match '/courses', to: 'courses#index', via:'get'
   match '/OffCampus', to: 'static_pages#OffCampus', via: 'get'
   match '/startups2students', to: 'static_pages#startups2students', via: 'get'
+  match '/calendar', to: 'events#embeddedCal', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,13 +1,18 @@
 %ul.nav.nav-pills.pull-left
   %li
+    =link_to 'All', users_path
+  %li
     =link_to 'Technical', users_path(:filter => 'Technical')
   %li
-    =link_to 'Non-Technical', users_path(:filter => 'Non-technical')
+    =link_to 'Non-Technical', users_path(:filter => 'Non-Technical')
 
 .container-fluid
   .row-fluid
     .col-lg-12
       %h1.page-header Students
   -@candidates.each do |f|
-    %h3=f.name
-    %p=f.orgtype
+    %h3
+      =f.name
+      ="discipline is: #{f.discipline}"
+      =link_to "Download", f.avatar.url(:original, false)
+

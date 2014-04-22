@@ -1,0 +1,9 @@
+#main.web
+  .callout{style: "opacity: 1; top: 251px;"}
+    %h1 Apply to Boulder's top startups in 60 seconds.
+    .col-md-4.col-md-offset-2
+      %a
+        =link_to  "For Candidates", new_user_registration_path(:orgtype => 'candidates'), :class => "primaryButton smallType borderButton"
+    .col-md-4.col-md-offset-1
+      %a
+        =link_to  "For Startups", new_user_registration_path(:orgtype => 'companies'), :class => "primaryButton smallType borderButton"

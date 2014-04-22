@@ -1,7 +1,10 @@
 class UsersController < ApplicationController
   def index
-  	@candidates = User.find_all_by_discipline(params[:filter])
-  	raise
+  	if params.has_key?(:filter)
+  		@candidates = User.find_all_by_discipline(params[:filter])
+  	else
+  		@candidates = User.all
+  	end
   end
 
   def show

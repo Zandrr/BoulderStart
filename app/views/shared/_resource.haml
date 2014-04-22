@@ -11,7 +11,8 @@
         %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{@count}"}
           .item=image_tag(f.photo)
       .panel-collapse.collapse{:id => "collapse#{@count}"}
-        .panel-body
-          %h3.website=link_to "#{f.name}", f.website
-          %label Description:
-          %p=f.description
+        =link_to f.website do
+          .panel-body
+            %h3.website="#{f.name}"
+            %label Description:
+            %p="#{f.description}"

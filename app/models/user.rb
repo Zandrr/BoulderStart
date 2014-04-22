@@ -18,12 +18,12 @@ class User < ActiveRecord::Base
   has_many :categories, dependent: :destroy
   has_many :blogs, dependent: :destroy
 
-  def student?
-   		self.orgtype == 'Student'
+  def candidate?
+   		self.orgtype == 'candidate'
 	end
 
-	def company?
-		self.orgtype == 'Company'
+	def startup?
+		self.orgtype == 'startup'
 	end
 
   def password_required?

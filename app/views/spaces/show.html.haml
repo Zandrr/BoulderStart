@@ -6,19 +6,12 @@
     %span.glyphicon.glyphicon-arrow-left.black
       .black Back
 
-/ .container-fluid
-/   .row-fluid
-/     .col-lg-12
-/       %h1.page-header
-/         Spaces
-/   -@spaces.each do |f|
-/     .col-md-6.portfolio-item
-/       %h3
-/         .black=f[0]
-/       %img.img-responsive{src: f[1] }
-/       %h4
-/         .black=f[2]
-.container-fluid
+
+
+
+
+
+
   .row-fluid
     .col-lg-12
       %h1.page-header
@@ -27,9 +20,9 @@
     -@count = @count+1
     .col-md-6.portfolio-item
       #accordion.panel-group
-      .panel.panel-default
-        .panel-heading=f[0]
         %h2.panel-title
+          %h3=f[0]
+          %br
           %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{@count}"}
             .item=image_tag(f[1])
         .panel-collapse.collapse{:id => "collapse#{@count}"}

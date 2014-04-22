@@ -8,17 +8,15 @@
   / Wrapper for slides
   .carousel-inner
     .item.active.constant
-      %img= image_tag("Rideorama.jpg")
-      .carousel-caption
-        %h1 SENDGRID!
+      =render 'shared/s2s'
     .item.constant
-      %img= link_to image_tag("Paul-B-crowd.jpg"), "#"
+      %img= link_to image_tag("space.jpg"), "/spaces/pivotdesk"
       .carousel-caption
-        %h1 THINK BIGGER
+        %h1 Get Space Now.
     .item.constant
-      %img= image_tag("BlogFrog.jpg")
-      .carousel-caption
-        %h1 INSIGHTFUL QUOTE
+      %img= link_to image_tag("flatirons.jpg"), "/events"
+      .carousel-caption{:stlyle => "color:black; font-size:100px;"}
+        %h1 See Local Events.
   / Controls
   %a.left.carousel-control{"data-slide" => "prev", href: "#carousel-example-generic"}
     %span.glyphicon.glyphicon-chevron-left

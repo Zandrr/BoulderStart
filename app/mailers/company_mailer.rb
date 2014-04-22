@@ -3,7 +3,7 @@ class CompanyMailer < ActionMailer::Base
  #include SendGrid
 
  def resume_mailer(user)
- 	mail(to: 'fletcher.richman@colorado.edu', subject: 'WE CAN SEND EMAIL')
+ 	mail(to: 'alexander.campbell@colorado.edu', subject: 'WE CAN SEND EMAIL')
  end
 
 
