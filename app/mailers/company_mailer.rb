@@ -1,8 +1,9 @@
 class CompanyMailer < ActionMailer::Base
- include SendGrid
+ default from: "startups2students@gmail.com"
+ #include SendGrid
 
- def resume_message(user)
- 	mail(to: 'alexander.campbell@colorado.edu', subject: "test email")
+ def resume_mailer(user)
+ 	mail(to: 'fletcher.richman@colorado.edu', subject: 'WE CAN SEND EMAIL')
  end
 
 

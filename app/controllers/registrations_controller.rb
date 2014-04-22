@@ -5,8 +5,7 @@ class RegistrationsController < Devise::RegistrationsController
 
   def create
     super
-    CompanyMailer.resume_message(@user).deliver unless @user.invalid?
-    binding.pry
+    CompanyMailer.resume_mailer(@user).deliver unless @user.invalid?
   end
 
   def update
