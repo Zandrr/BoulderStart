@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
   def index
-  	@candidates = User.find_all_by_discipline(params[:filter])
+  	if params.has_key?(:filter)
+      @candidates = User.where(:orgtype => 'candidate').find_all_by_discipline(params[:filter])
+    else
+      @candidates = User.where(:orgtype => 'candidate')
   end
 
   def show
