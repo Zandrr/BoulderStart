@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   
   #paperclip
-  has_attached_file :avatar, styles: {thumbnail: "60x60#"}
+  has_attached_file :avatar
   validates_attachment_content_type :avatar, :content_type => ["application/pdf","application/vnd.ms-excel",     
              "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
              "application/msword", 
