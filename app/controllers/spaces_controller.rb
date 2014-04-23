@@ -5,18 +5,20 @@ class SpacesController < ApplicationController
   # GET /spaces
   # GET /spaces.json
   def index
-    @spaces = Space.getspace
     if params.has_key?(:filter)
-      @space = Space.find_all_by_space_type(params[:filter])
+      @things = Space.find_all_by_space_type(params[:filter])
   else
-      @space = Space.all
+      @things = Space.all
     end
+    @count = 0
+    @title = "Spaces & Accelerators"
   end
 
   # GET /spaces/1
   # GET /spaces/1.json
   def show
     @spaces = Space.getspace
+     @count = 0
   end
 
   # GET /spaces/new

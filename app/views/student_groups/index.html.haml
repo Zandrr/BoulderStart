@@ -1,12 +1,6 @@
-.container-fluid
-  .row-fluid
-    =link_to 'Back', resources_path
-    .col-lg-12
-      %h1.page-header
-        Student Groups
-  -@studentgroups.each do |f|
-    .col-md-4.portfolio-item
-      %h3=f.name
-      =link_to(image_tag( "#{f.photo}", :class => "img-responsive", :style => "width: 200px;"),"#{f.website}")
-      %label Description
-      %p=f.description
+%body
+  %ul.nav.nav-pills.pull-left
+    %li
+      %a{href: "/resources"}
+        %span.glyphicon.glyphicon-arrow-left.black
+=render :partial => 'shared/resource'

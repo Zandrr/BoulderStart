@@ -2,7 +2,8 @@ class StudentGroupsController < ApplicationController
 
 	def index
 
-		@studentgroups = StudentGroups.all.asc
+		@things = StudentGroups.all.asc
 		@count = 0
+		@title = "Student Groups"
 	end
 end

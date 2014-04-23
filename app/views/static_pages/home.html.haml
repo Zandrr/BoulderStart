@@ -8,6 +8,10 @@
   / Wrapper for slides
   .carousel-inner
     .item.active.constant
+      %img= image_tag("Rideorama.jpg")
+      .carousel-caption
+        %h1 SENDGRID!
+    .item.constant
       %img= link_to image_tag("Paul-B-crowd.jpg"), "#"
       .carousel-caption
         %h1 THINK BIGGER
@@ -15,20 +19,19 @@
       %img= image_tag("BlogFrog.jpg")
       .carousel-caption
         %h1 INSIGHTFUL QUOTE
-    .item.constant
-      %img= image_tag("Rideorama.jpg")
-      .carousel-caption
-        %h1 READY, SET, STARTUP
   / Controls
   %a.left.carousel-control{"data-slide" => "prev", href: "#carousel-example-generic"}
     %span.glyphicon.glyphicon-chevron-left
   %a.right.carousel-control{"data-slide" => "next", href: "#carousel-example-generic"}
     %span.glyphicon.glyphicon-chevron-right
 
-%div
+.text
   %h1{:style => "color:black;"} About
-  %h2.inset University of Colorado at Boulder Entrepreneurship
-  %p.inset Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+  %h2 University of Colorado at Boulder Entrepreneurship
+  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
 
+  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+
+  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
 
 

@@ -1,7 +1,9 @@
 class EntityController < ApplicationController
   def index
 
-  	@entity = Entities.all
+  	@things = Entities.all
+  	@count = 0
+  	@title = "Business Development Entities"
   end
 
   def show

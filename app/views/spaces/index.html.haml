@@ -13,19 +13,4 @@
     %li
       =link_to 'Spaces Available Now', 'spaces/pivotdesk', :class => 'black'
 
-
-
-
-.container-fluid
-  .row-fluid
-    .col-lg-12
-      %h1.page-header
-        Spaces
-  -@space.each do |f|
-    .col-md-6.portfolio-item
-      %h3
-        .black=link_to f.name, "#{f.website}"
-      %img.img-responsive= link_to image_tag(f.photo), f.website
-      %h4
-        .black=f.description
-
+=render :partial => 'shared/resource'

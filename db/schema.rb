@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140413222759) do
+ActiveRecord::Schema.define(version: 20140421003032) do
 
   create_table "blogs", force: true do |t|
     t.datetime "created_at"
@@ -135,7 +135,7 @@ ActiveRecord::Schema.define(version: 20140413222759) do
     t.string   "name"
     t.string   "website"
     t.text     "description"
-    t.string   "angellist"
+    t.string   "github"
     t.string   "linkedin"
     t.string   "twitter"
     t.string   "email",                  default: "", null: false
@@ -154,6 +154,7 @@ ActiveRecord::Schema.define(version: 20140413222759) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "discipline"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

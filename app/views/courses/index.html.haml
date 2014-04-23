@@ -1,5 +1,8 @@
 %ul.nav.nav-pills.pull-left
   %li
+    %a{href: "/resources"}
+      %span.glyphicon.glyphicon-arrow-left.black
+  %li
     =link_to 'All', courses_path, :class => 'black'
   %li
     =link_to 'Engineering Courses', courses_path(:filter => 'Engineering'), :class => 'black'
@@ -29,8 +32,8 @@
             %p=f.code
         .panel-collapse.collapse{:id => "collapse#{@count}"}
           .panel-body
-            %label Description
-            %p=f.description
+            %label.darken Description
+            %p.darken=f.description
 
 
 

@@ -1,4 +1,5 @@
 SampleApp::Application.routes.draw do
+  ActiveAdmin.routes(self)
   get "providers/index"
   get "provider/index"
   get "entity/index"
@@ -6,10 +7,12 @@ SampleApp::Application.routes.draw do
   get "funding/index"
   get "twitter/index"
   get "twitter/user_tweet"
-  devise_for :users
   resources :positions
+  devise_for :users, controllers: { registrations: "registrations" }
   get "users", to: "users#index"
   get "users/:id", to: "users#show", as: "user"
+
+ 
 
 
  resources :users do
@@ -23,7 +26,6 @@ end
   resources :student_groups
 
 
-
   get "courses/new"
   get "courses/index"
   get "spaces/pivotdesk"
@@ -33,11 +35,11 @@ end
   match 'entity', to: 'entity#index', via: 'get'
   match '/resources',    to: 'static_pages#resources', via: 'get'
   match '/blog',   to: 'blogs#index', via: 'get'
-  match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/contact', to: 'static_pages#contactus', via: 'get'
   match '/campus',    to: 'static_pages#campus', via: 'get'
   match '/courses', to: 'courses#index', via:'get'
   match '/OffCampus', to: 'static_pages#OffCampus', via: 'get'
-  match '/embeddedCal', to: 'events#embeddedCal', via: 'get'
+  match '/startups2students', to: 'static_pages#startups2students', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

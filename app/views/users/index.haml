@@ -1,0 +1,13 @@
+%ul.nav.nav-pills.pull-left
+  %li
+    =link_to 'Technical', users_path(:filter => 'Technical')
+  %li
+    =link_to 'Non-Technical', users_path(:filter => 'Non-technical')
+
+.container-fluid
+  .row-fluid
+    .col-lg-12
+      %h1.page-header Students
+  -@candidates.each do |f|
+    %h3=f.name
+    %p=f.orgtype

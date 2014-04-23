@@ -5,20 +5,24 @@ $global-border-radius: 5px;
 $global-border-radius-sharp: 2px;
 
 // /* universal */
-
-.column{
-  display: inline-block;
-  vertical-align: top;
+%img {
+  width:10px;
 }
-
-
+.text{
+  padding: 5% 20% 20% 20%;
+  display: block;
+}
+.panel-heading{
+  font-weight: bold;
+}
 
 html {
 	overflow-y:scroll;
 }
 
 body {
-	padding-top:60px;
+	padding-top:50px;
+  background-color:#FFFFF0;
 }
 
 section {
@@ -42,6 +46,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   &:hover {
     text-decoration: none;
+  }
+}
+
+.website a{
+  color: black;
+  &:hover{
+    color:$lightgrey;
   }
 }
 
@@ -74,11 +85,12 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #181818;
+  font-family: sans-serif;
+  color: white;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   padding-top: 9px;
-  font-weight: bold;
+  font-weight: 300;
   line-height: 1;
 	&:hover {
 	  color: $lightgrey;
@@ -86,11 +98,24 @@ p {
 	}
 }
 
+header li {
+  font-family: sans-serif;
+  font-size: 1.0em;
+  color: white;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $lightgrey;
+    text-decoration: none;
+  }
+}
+
 // /* footer */
 
 
 footer {
   margin-top: 45px;
+  margin-bottom: 5px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: $lightgrey;
@@ -121,7 +146,7 @@ footer {
 
 
 body {
-margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+margin-top: 10px; /* 50px is the height of the navbar - change this if the navbarn height changes */
 }
 
 .portfolio-item {
@@ -137,7 +162,9 @@ margin: 50px 0;
 }
 .panel-title{
   text-decoration: none;
+  color:black;
 }
+
 
 .constant img {
   display: block;
@@ -153,24 +180,23 @@ margin: 50px 0;
   vertical-align: top;
 }
 
-.inset{
-
-  color: white;
-  font-size: 18px;
-  line-height:30px;
-}
 
 .black{
   color: #181818;
   font-size: 20px
 }
+.darken {
+  color: black;
+}
 
-.backstretch img{
-  opacity: .9;
+ a .item img{
+  width:300px;
+  display:inline-block;
 }
 
 .panel.panel-default{
   opacity: .75;
+  color:$lightgrey;
 }
 .navbar-fixed-top{
   opacity: .9;
@@ -222,10 +248,176 @@ label.checkbox{
   }
 }
 
+
 .position-pane{
   background-color: rgb(214, 214, 214);
   padding: 10px;
   border-radius: 10px;
+}
+
+
+
+
+/*startups2students home page */
+/* Main
+--------------------------------------------- */
+
+#main {
+    background-color: #333333;
+    color: #f8f8f8;
+}
+
+#main.web {
+    height: 502px;
+    position: relative;
+}
+
+#main h1 {
+    font-weight: 100;
+    font-size: 54px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    text-align: center;
+    float: center;
+    opacity: 1;
+}
+
+.wf-active #main h1 {
+    margin: 0;
+    opacity: 1;
+}
+
+#main.web .callout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: -70px;
+}
+
+#main .primaryButton {
+color: #f8f8f8;
+font-size: 16px;
+opacity: 1;
+margin-left: 25px;
+margin-right: 25px;
+}
+
+.wf-active #main .primaryButton {
+    opacity: 1;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+#howitworks {
+    padding: 100px 0 50px 0;
+    margin: 0 auto;
+}
+
+#howitworks img {
+    padding-bottom: 30px;
+}
+
+.smallType {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.primaryButton {
+    padding: 14px 30px;
+    display: inline-block;
+    margin: 26px 0 0 0;
+}
+
+.primaryButton:hover {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.borderButton {
+    border: 1px solid rgba(244,244,244,.9);
+}
+
+.borderButton:hover {
+    background-color: rgba(0,0,0,.1);
+     transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.sectionTitle {
+    font-style: normal;
+    color: #333;
+    font-weight: 300;
+    font-size: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    float: center;
+    opacity: 1;
+}
+
+.explanatory {
+  max-width: 660px;
+  margin: 0 auto;
+  color: #333;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 20px;
+  font: sans-serif;
+  text-align:center;
+}
+
+
+#constituents {
+    padding: 0 0 100px 0;
+    max-width: 600px;
+}
+
+#constituents > div {
+    float: left;
+    width: 300px;
+    padding: 0 30px;
+}
+
+#constituents img {
+    padding: 0 0 14px 0;
+}
+
+#constituents .type {
+    color: #635f7d;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#constituents .plug {
+    color: #555;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.column {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 
