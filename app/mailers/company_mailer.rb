@@ -5,7 +5,7 @@ class CompanyMailer < ActionMailer::Base
 # @maillist = []
 # 	@startups.each do |org|
 # 		@maillist << org.email
-	end
+	# end
 
  def resume_mailer(user)
  	mail(to: 'alexande.campbell@cololrado.edu', subject: 'WE CAN SEND EMAIL')
