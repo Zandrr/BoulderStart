@@ -6,6 +6,8 @@
       %h3 There aren't any blog posts yet!
     -@posts.each do |post|
       .row
+        -if !current_user.nil? && current_user.admin == true
+          =link_to "Delete Post", user_blog_path(current_user.id, post.id), method: :delete
         .panel.panel-default
           .panel-heading
             %h3.panel-title

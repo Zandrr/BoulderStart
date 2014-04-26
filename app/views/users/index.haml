@@ -10,8 +10,18 @@
     .col-lg-12
       %h1.page-header Students
   -@candidates.each do |f|
-    %h3
-      =f.name
-      ="discipline is: #{f.discipline}"
+    .media.position-pane
+      .media-body
+        %h3=f.name
+      ="Discipline: #{f.discipline}"
+      %br
       =link_to "Resume", f.avatar.url(:original, false)
+      %br
+      =link_to "Personal Website", f.website
+      %br
+      =link_to "LinkedIn Profile", f.linkedin
+      %br
+      %a=mail_to(f.email)
+
+
 
