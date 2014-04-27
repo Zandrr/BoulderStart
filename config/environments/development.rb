@@ -35,15 +35,15 @@ SampleApp::Application.configure do
   config.sass.cache = false  # Disable the SASS compiler cache 
   
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'boulderstartups.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address => "smtp.gmail.com",
-    :port => "587",
-    :domain => "gmail.com",
+    :address => "smtp.sendgrid.net",
+    :port => 587,
+    :domain => "boulderstartups.herokuapp.com",
     :authentication => :plain,
-    :enable_starttls_photo => true,
-    :user_name => 'startups2students',
-    :password => 'startups2'
+    :user_name => 'campbellalexx',
+    :password => ENV['sendgridboulder']
   }
+
 end

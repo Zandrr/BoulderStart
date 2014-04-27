@@ -1,6 +1,6 @@
 class CompanyMailer < ActionMailer::Base
  default from: "startups2students@gmail.com"
- #include SendGrid
+ include SendGrid
 
 def email_list
   @startups = User.find_all_by_orgtype('startup')
