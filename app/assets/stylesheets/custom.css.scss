@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 $lightgrey: #999;
 $global-border-radius: 5px;
@@ -266,6 +267,7 @@ label.checkbox{
   }
   .white-box{
     display: inline-block;
+    min-width: 100px;
     *display: inline;
     padding: 4px 12px;
     margin-bottom: 0;
@@ -285,6 +287,7 @@ label.checkbox{
 
   .gray-box{
     display: inline-block;
+    min-width: 100px;
     *display: inline;
     padding: 4px 12px;
     margin-bottom: 0;
@@ -296,6 +299,9 @@ label.checkbox{
     color: gray;
     *border: 0;
   }
+
+
+
   .resume{
     text-align: right;
     vertical-align: middle;

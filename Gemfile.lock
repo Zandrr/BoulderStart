@@ -120,6 +120,8 @@ GEM
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.3)
+    font-awesome-rails (4.0.3.2)
+      railties (>= 3.2, < 5.0)
     formtastic (2.3.0.rc3)
       actionpack (>= 3.0)
     gherkin (2.12.2)
@@ -300,6 +302,7 @@ DEPENDENCIES
   database_cleaner
   debugger (~> 1.6.6)
   devise
+  font-awesome-rails
   haml
   httparty
   jbuilder (= 1.0.2)

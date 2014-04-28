@@ -8,15 +8,15 @@
 .container-fluid
   .row
     .col-lg-12
-      %h1.page-header Students
+      %h1.page-header Candidates
       -@candidates.each do |candidate|
         .media.position-pane
           .media-body
             .row
-              .col-md-8
+              .col-md-4
                 %h3
                   = candidate.name
-              .col-md-4.resume
+              .col-md-4.col-md-offset-4.resume
                 %span.glyphicon.glyphicon-list-alt
                 =link_to "Resume", candidate.avatar.url(:original, false), :target => "_blank"  
             .row
@@ -24,21 +24,37 @@
                 %h5
                   =candidate.discipline
               - if candidate.website.present?              
-                .col-md-2.white-box
+                .col-md-1.white-box
                   %span.glyphicon.glyphicon-globe
-                  =link_to "Personal Website", candidate.website, :target => "_blank" 
+                  =link_to "Website", candidate.website, :target => "_blank" 
               - else
-                .col-md-2.gray-box
-                %span.glyphicon.glyphicon-globe
-                  Personal Website
+                .col-md-1.gray-box
+                  %span.glyphicon.glyphicon-globe
+                  Website
               - if candidate.linkedin.present?    
-                .col-md-2.col-md-offset-1.white-box
-                  %span.glyphicon.glyphicon-user
+                .col-md-1.white-box
+                  %i.fa.fa-linkedin
                   =link_to "LinkedIn", candidate.linkedin, :target => "_blank" 
               - else
-                .col-md-2.col-md-offset-1.gray-box
-                  %span.glyphicon.glyphicon-user
-                  LinkedIn
+                .col-md-1.gray-box
+                  %i.fa.fa-linkedin                  
+                  LinkedIn    
+              - if candidate.github.present?    
+                .col-md-1.white-box
+                  %i.fa.fa-linkedin
+                  =link_to "GitHub", candidate.linkedin, :target => "_blank" 
+              - else
+                .col-md-1.gray-box
+                  %i.fa.fa-github                 
+                  GitHub
+              - if candidate.twitter.present?    
+                .col-md-1.white-box
+                  %i.fa.fa-twitter
+                  =link_to "Twitter", candidate.twitter, :target => "_blank"
+              - else 
+                .col-md-1.gray-box
+                  %i.fa.fa-twitter
+                  Twitter                   
               .col-md-4.col-md-offset-1.white-box
                 %span.glyphicon.glyphicon-envelope
                 %a=mail_to(candidate.email)

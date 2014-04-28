@@ -15,6 +15,7 @@ gem "debugger", "~> 1.6.6"
 gem "paperclip", "~> 4.1"
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem "sendgrid"
+gem 'font-awesome-rails'
 
 
 
