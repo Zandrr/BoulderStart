@@ -8,6 +8,5 @@
         %li= link_to "Resources", resources_path
         - if user_signed_in? 
           %li= link_to 'Logout', destroy_user_session_path, :method => :delete
-          %li= link_to 'Profile', user_path(current_user.id)
         - elsif current_user.nil? or current_user.startup?
           %li= link_to 'Login', new_user_session_path

@@ -1,5 +1,5 @@
-%h1 Startups
-%h3 Register to get emails about talented students looking for internships and jobs!
+%h1.sectionTitle Startups
+%p.content-block If you're a startup, once a week you'll get an email with talented technical and non-technical students eager to work at your startup.  It's totally free to use, so go hire some students.
 = form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :multipart => true }) do |f|
     = devise_error_messages!
     .border-form-div

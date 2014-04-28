@@ -420,4 +420,30 @@ margin-right: 25px;
     padding: 0 10px;
 }
 
+.content-block {
+  padding: 0 0 15px 0;
+  color: #333;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+}
 
+.sectionTitle {
+  font-style: normal;
+  color: #333;
+  font-weight: 300;
+  font-size: 54px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  float: center;
+  opacity: 1;
+}
+
+.contentlabel {
+display: block;
+padding: 10px 0;
+font-weight: bold;
+text-transform: uppercase;
+}

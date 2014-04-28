@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
              "text/plain"]
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  #validates :orgtype, presence: true
+  # validates :password, presence: true
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
@@ -26,8 +26,13 @@ class User < ActiveRecord::Base
 		self.orgtype == 'startup'
 	end
 
+
   def password_required?
-    false
+    if orgtype == "startup"
+      !persisted? || !password.nil? || !password_confirmation.nil?
+    else
+      false
+    end
   end
   
 end
