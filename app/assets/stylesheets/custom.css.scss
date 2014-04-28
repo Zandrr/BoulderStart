@@ -249,11 +249,69 @@ label.checkbox{
 }
 
 
+
+/*startups2students users page */
+
 .position-pane{
-  background-color: rgb(214, 214, 214);
+  background-color: #333333;
   padding: 10px;
   border-radius: 10px;
+  color: white;
+  a {
+    color: rgb(202, 202, 202);
+  }
+  .row{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .white-box{
+    display: inline-block;
+    *display: inline;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    *margin-left: .3em;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    *border: 0;
+    &:hover{
+      background-color: white;
+      color: black;
+      a {color: black;}
+    }
+  }
+
+  .gray-box{
+    display: inline-block;
+    *display: inline;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    *margin-left: .3em;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid gray;
+    color: gray;
+    *border: 0;
+  }
+  .resume{
+    text-align: right;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 18px;
+    padding-top: 15px;
+    &:hover a{
+      color:black;
+    }
+    &:hover{
+      color:black;
+    }
+  }
 }
+
+
 
 
 
