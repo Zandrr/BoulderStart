@@ -24,6 +24,7 @@ group :development, :test do
   gem 'rspec-rails', '2.13.1'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'letter_opener'
   gem 'pry'
 end
 

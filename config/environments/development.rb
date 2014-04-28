@@ -34,6 +34,7 @@ SampleApp::Application.configure do
   config.assets.cache_store = :null_store  # Disables the Asset cache
   config.sass.cache = false  # Disable the SASS compiler cache 
   
+  config.action_mailer.delivery_method = :letter_opener
 
   # config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # config.action_mailer.delivery_method = :smtp

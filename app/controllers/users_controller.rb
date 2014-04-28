@@ -13,4 +13,9 @@ class UsersController < ApplicationController
     #raise 
   end
 
+  def weekly_emails
+    CompanyMailer.resume_mailer.deliver
+    redirect_to root_path, :notice => "Emails delivered!"
+  end
+
 end

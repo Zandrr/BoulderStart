@@ -16,7 +16,7 @@
               .col-md-4
                 %h3
                   = candidate.name
-              .col-md-4.col-md-offset-4.resume
+              .col-md-2.col-md-offset-6.resume
                 %span.glyphicon.glyphicon-list-alt
                 =link_to "Resume", candidate.avatar.url(:original, false), :target => "_blank"  
             .row
@@ -41,7 +41,7 @@
                   LinkedIn    
               - if candidate.github.present?    
                 .col-md-1.white-box
-                  %i.fa.fa-linkedin
+                  %i.fa.fa-github
                   =link_to "GitHub", candidate.linkedin, :target => "_blank" 
               - else
                 .col-md-1.gray-box
@@ -50,7 +50,7 @@
               - if candidate.twitter.present?    
                 .col-md-1.white-box
                   %i.fa.fa-twitter
-                  =link_to "Twitter", candidate.twitter, :target => "_blank"
+                  =link_to "Twitter", "http://twitter.com/#{candidate.twitter.gsub("@", "")}", :target => "_blank"
               - else 
                 .col-md-1.gray-box
                   %i.fa.fa-twitter

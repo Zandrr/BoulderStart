@@ -26,6 +26,10 @@ class User < ActiveRecord::Base
 		self.orgtype == 'startup'
 	end
 
+  def self.week_of_candidates
+    User.where("created_at > ?", Date.today - 7.days).find_all_by_orgtype('candidate')
+  end
+
 
   def password_required?
     if orgtype == "startup"

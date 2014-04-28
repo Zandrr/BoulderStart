@@ -11,6 +11,7 @@ SampleApp::Application.routes.draw do
   devise_for :users, controllers: { registrations: "registrations" }
   get "users", to: "users#index"
   get "users/:id", to: "users#show", as: "user"
+  get "weekly_emails", to: "users#weekly_emails"
 
  
 

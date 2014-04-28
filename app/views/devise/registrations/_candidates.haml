@@ -1,5 +1,5 @@
 %h1.sectionTitle Candidates
-%p.content-block If you're looking for a job or internship at a Boulder startup, fill out the boxes below and attach your resume.  Our startup partners will reach out to you directly!
+%p.content-block If you're looking for a job or internship at a Boulder startup, fill out the form below and attach your resume.  Our startup partners will reach out to you directly!
 = form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :multipart => true }) do |f|
   = devise_error_messages!
   .border-form-div
@@ -15,5 +15,3 @@
     %p.contentlabel="Upload your resume (pdf recommended):"
     = f.file_field :avatar, :class => 'form-control'
     = f.submit "Send to Companies", :class => 'btn btn-primary' 
-    %br
-    = render "devise/shared/links"
