@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  respond_to :html
+
   def index
   	if params.has_key?(:filter)
   		@candidates = User.where(:orgtype => 'candidate').find_all_by_discipline(params[:filter])
@@ -10,7 +12,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @blogs = @user.blogs
-    #raise 
   end
 
   def weekly_emails
