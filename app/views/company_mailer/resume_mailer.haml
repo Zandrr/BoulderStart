@@ -2,7 +2,7 @@
 %html
   %head
     %meta{content: "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
-    %title RailsCasts Weekly
+    %title
     :css
       .position-pane{background-color:#333333;padding:10px; border-radius: 10px; color: white;}
       .position-pane a{color: rgb(202, 202, 202);}
@@ -13,32 +13,32 @@
       .resume{text-align: right;vertical-align: middle;cursor: pointer;font-size: 18px;padding-top: 15px;
       .resume:hover a{color:black;}
       .resume:hover{color:black;}
-%h1.page-header Candidates
--@candidates.each do |candidate|
-  .media.position-pane
-    .media-body
-      .row
-        .col-md-4
-          %h3
-            = candidate.name
-        .col-md-2.col-md-offset-6.resume
-          %span.glyphicon.glyphicon-list-alt
-          =link_to "Resume", candidate.avatar.url(:original, false), :target => "_blank"  
-      .row
-        %h5
-          =candidate.discipline
-        - if candidate.website.present?              
-          .white-box
-            =link_to "Website", candidate.website, :target => "_blank" 
-        - if candidate.linkedin.present?    
-          .white-box
-            =link_to "LinkedIn", candidate.linkedin, :target => "_blank" 
-        - if candidate.github.present?    
-          .white-box
-            %i.fa.fa-linkedin
-            =link_to "GitHub", candidate.linkedin, :target => "_blank" 
-        - if candidate.twitter.present?    
-          .col-md-1.white-box
-            // need twitter here                
-        .col-md-4.col-md-offset-1.white-box
-          %a=mail_to(candidate.email)
+    %h1.page-header Candidates
+    -@candidates.each do |candidate|
+      .media.position-pane
+        .media-body
+          .row
+            .col-md-4
+              %h3
+                = candidate.name
+            .col-md-2.col-md-offset-6.resume
+              %span.glyphicon.glyphicon-list-alt
+              =link_to "Resume", "#{root_url.gsub(/\/$/, '')}#{candidate.avatar.url}", :target => "_blank"  
+          .row
+            %h5
+              =candidate.discipline
+            - if candidate.website.present?              
+              .white-box
+                =link_to "Website", candidate.website, :target => "_blank" 
+            - if candidate.linkedin.present?    
+              .white-box
+                =link_to "LinkedIn", candidate.linkedin, :target => "_blank" 
+            - if candidate.github.present?    
+              .white-box
+                %i.fa.fa-linkedin
+                =link_to "GitHub", candidate.linkedin, :target => "_blank" 
+            - if candidate.twitter.present?    
+              .col-md-1.white-box
+                // need twitter here                
+            .col-md-4.col-md-offset-1.white-box
+              %a=mail_to(candidate.email)

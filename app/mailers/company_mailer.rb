@@ -13,11 +13,7 @@ end
 
  def resume_mailer
   @candidates = User.week_of_candidates
-  @maillist = email_list
-  binding.pry
-  @maillist.each do |mail_item|
- 	  mail(to: mail_item, subject: 'These candidates want to work at your awesome startup!')
-  end
+ 	mail(to: email_list, subject: 'These candidates want to work at your awesome startup!')
  end
 
 
