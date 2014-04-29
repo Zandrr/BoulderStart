@@ -1,15 +1,15 @@
 %ul.nav.nav-pills.pull-left
-  %li
-    =link_to "Edit my Profile", edit_user_registration_path
-  %li
-    =link_to "View Available Positions", positions_path
-  -if current_user.startup?
-    %li
-      =link_to "Add new position", new_position_path
-  -else
-    %li
-      =link_to "Edit my skills/interests/major", edit_position_path
-=link_to "Download", current_user.avatar.url(:original, false)
+/   %li
+/     =link_to "Edit my Profile", edit_user_registration_path
+/   %li
+/     =link_to "View Available Positions", positions_path
+/   -if current_user.startup?
+/     %li
+/       =link_to "Add new position", new_position_path
+/   -else
+/     %li
+/       =link_to "Edit my skills/interests/major", edit_position_path
+/ =link_to "Download", current_user.avatar.url(:original, false)
 
 - if current_user.admin
   = link_to "Send Emails", weekly_emails_path
