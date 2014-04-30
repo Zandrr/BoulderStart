@@ -1,4 +1,7 @@
-- if params[:orgtype] == 'companies'
-    = render "companies"
-- elsif params[:orgtype] == 'candidates'
-    = render "candidates"
+-if params[:orgtype] or session[:orgtype] == 'companies'
+  = render "companies"
+  -session[:orgtype] = "companies"
+- elsif params[:orgtype] or session[:orgtype] == 'candidates'
+  = render "candidates"
+  -session[:orgtype] = "candidates"
+
