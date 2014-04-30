@@ -5,14 +5,14 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
-  def after_sign_in_path_for(resource)
-    super
-    if current_user.startup?
-      users_path
-    else
-      root_path(resource)
-    end
-  end
+  # def after_sign_in_path_for(resource)
+  
+  #   if current_user.startup?
+  #     users_path
+  #   else
+  #     root_path(resource)
+  #   end
+  # end
 
   # def after_sign_in_path_for(resource)
   #   user_path(resource)
