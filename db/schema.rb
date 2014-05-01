@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140421003032) do
+ActiveRecord::Schema.define(version: 20140501033231) do
 
   create_table "blogs", force: true do |t|
     t.datetime "created_at"
@@ -44,6 +44,15 @@ ActiveRecord::Schema.define(version: 20140421003032) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "discipline"
+  end
+
+  create_table "departments", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "photo"
+    t.string   "website"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "entities", force: true do |t|
@@ -155,6 +164,7 @@ ActiveRecord::Schema.define(version: 20140421003032) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.string   "discipline"
+    t.datetime "created_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

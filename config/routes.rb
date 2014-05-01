@@ -26,6 +26,8 @@ end
 
   resources :student_groups
 
+  resources :departments
+
 
   get "courses/new"
   get "courses/index"

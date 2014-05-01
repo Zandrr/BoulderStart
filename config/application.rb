@@ -1,3 +1,4 @@
+
 require File.expand_path('../boot', __FILE__)
 
 # Pick the frameworks you want:
@@ -10,6 +11,8 @@ require "sprockets/railtie"
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
+
+# config.time_zone = "Mountain Time (US & Canada)"
 
 module SampleApp
   class Application < Rails::Application
