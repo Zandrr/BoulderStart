@@ -4,7 +4,7 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.getcal
+    @events = Event.getcal.sort_by! {|obj| obj[2] unless obj.blank?}
     @count = 0
   end
 
