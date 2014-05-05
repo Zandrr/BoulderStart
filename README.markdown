@@ -1,6 +1,6 @@
 README
 
-# H1 Title: BoulderStartups
+#BoulderStartups
 
 **Team Members: Fletcher Richman & Alexander Campbell**
 
