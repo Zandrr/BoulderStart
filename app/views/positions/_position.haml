@@ -3,7 +3,10 @@
     %img.media-object{alt: "...", src: position.user.avatar(:thumb)}
   .media-body
     %h4.media-heading
-      = link_to position.title + " at " + position.user.name, position_path(position)
+      -if current_user.student?
+        = link_to position.title + " at " + position.user.name, position_path(position)
+      -else
+        = link_to position.user.name, user_path(position.user.id)
     = position.description
     .skills
       Skills: 

@@ -11,7 +11,8 @@ describe UsersController do
 
   describe "GET 'show'" do
     it "returns http success" do
-      get 'show'
+      user = FactoryGirl.create(:user)
+      get 'show', id: user.id
       response.should be_success
     end
   end

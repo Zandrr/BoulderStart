@@ -1,5 +1,9 @@
 .row
   .col-md-6.col-md-offset-3
+    - if current_user.student?
+      %h2 Companies
+    - else
+      %h2 Students
     - if !current_user.nil?
       %h2=link_to "My Profile", user_path(current_user.id)
     - else
@@ -7,4 +11,6 @@
         =link_to "Sign In", user_session_path
     - @positions.each do |position|
       = render position
+
+
 
