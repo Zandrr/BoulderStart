@@ -1,35 +1,27 @@
-== README
+README
 
 # H1 Title: BoulderStartups
 
 **Team Members: Fletcher Richman & Alexander Campbell**
 
-Description: *BoulderStartups is a site to bring together all the entrepreneurial resources at CU Boulder. For the CSCI 3308 class, we are building a job posting board that allows startups that are looking to hire to post jobs, and students to post their interest. Then students and startups can be matched.*
+Description: *BoulderStartups is a site to bring together all the entrepreneurial resources at CU Boulder. For the CSCI 3308 class, we are building a tool that allows students that want to work at startups to send their resume and other information directly to a list of interested startups. Startups can also signup to recieve emails of all the candidates or view them on the site*
+
+**NOTE** - We pivoted from our original proposal because we found from user feedback that this system would be more beneficial to both groups. 
 
 **MVC Description:**
 
 User Model
 
-Position Model
-
 User Controller
 
-Position Controller
+Start Sign Up View (/startups2students)
 
-Home View
+Sign Up View - candidate or startup
 
-Sign Up View
+User Index View - can be filtered 
 
-New Position Views
+Edit profile view - change password and delete account
 
-Position Index View
+Email view - email that is sent weekly to startups
 
-Show Position View
-
-Edit Position View
-
-Show User View
-
-Edit User View
-
-We will be using three main models to achieve a coherent board: Positions, Users, and Tags.  Users can either be students or companies.  If they are a *student* User they can only have on Position, with multiple tags.  Whereas a *company* User can have many Positions with many tags.  We will use the tags provided to more effectively match *student* Users with *company* Users.
+We only need 1 model to achieve a coherent service: Users.  Users can either be candidates or startups.  If they are a *candidate* User they can only submit their resume.  Whereas a *company* User can view candidate users and will also recieve emails. Emails are sent using SendGrid. 
