@@ -6,9 +6,6 @@
     = f.label :email
     %br/
     = f.email_field :email, :autofocus => true
-  - if devise_mapping.confirmable? && resource.pending_reconfirmation?
-    %div
-      Currently waiting confirmation for: #{resource.unconfirmed_email}
   %div
     = f.label :password
     %i (leave blank if you don't want to change it)
@@ -23,32 +20,6 @@
     %i (we need your current password to confirm your changes)
     %br/
     = f.password_field :current_password
-  %div
-    =f.label :name, "Change my name"
-    %br
-    = f.text_field :name, :class => 'form-control', :placeholder => 'Name'
-  %div
-    =f.label :website, "Change my website"
-    %br
-    = f.url_field :website, :class => 'form-control', :placeholder => 'Website'
-  %div
-    =f.label :twitter, "Change my Twitter handle"
-    %br
-    = f.text_field :twitter, :class => 'form-control', :placeholder => 'Twitter Handle'
-  %div
-    =f.label :linkedin, "Change my LinkedIn"
-    %br
-    = f.url_field :linkedin, :class => 'form-control', :placeholder => 'LinkedIn Url'
-  %div
-    =f.label :angellist, "Change my angellist"
-    %br
-    = f.url_field :angellist, :class => 'form-control', :placeholder => 'AngelList Profile URL'
-    I'm a 
-    = f.select :orgtype, [["Student", "Student"], ["Company", "Company"]], :prompt => 'Select One'
-  %div
-    =f.label :avatar, "Change my picture"
-    %br
-    = f.file_field :avatar, :class => 'form-control'
   %div= f.submit "Update"
 
 %h3 Cancel my account
