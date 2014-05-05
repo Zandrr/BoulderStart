@@ -27,6 +27,10 @@ When /^I press "([^\"]*)"$/ do |button|
   click_button(button)
 end
 
+ When (/^(?:|I )follow "([^"]*)"$/) do |link|
+   click_link(link)
+ end
+
 Then /^I should be on (.+)$/ do |page_name|
   current_path.should == path_to(page_name)
 end

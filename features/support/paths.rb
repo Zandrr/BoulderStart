@@ -13,6 +13,8 @@ module NavigationHelpers
   def path_to(page_name)
     case page_name
 
+    when /^the home page$/ then '/'
+    when /^the start page$/ then '/startups2students'
     when /^the sign up page$/ then '/users/sign_up'
     when /^the new positions page$/ then '/positions/new'
     when /^(.*)'s profile page$/i

@@ -6,6 +6,7 @@ class RegistrationsController < Devise::RegistrationsController
 
   def create
     super
+    redirect_to users_path if current_user.startup?
   end
 
   def update
