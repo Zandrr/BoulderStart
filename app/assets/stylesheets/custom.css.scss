@@ -115,13 +115,14 @@ header li {
 
 
 footer {
-  margin-top: 45px;
-  margin-bottom: 5px;
-  padding-top: 5px;
-  padding-bottom: 20px;
-  border-top: 1px solid #eaeaea;
+
   color: $lightgrey;
-  position: absolute;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow:hidden;
   }
 
 
