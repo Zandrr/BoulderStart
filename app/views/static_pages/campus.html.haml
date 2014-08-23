@@ -16,6 +16,13 @@
         %h1.page-header
           Campus Resources
     .row
+      .col-md-4.portfolio-item
+        %a{href: "http://cunvc.org/"}
+          %img= link_to image_tag("nvc.png",:class => "img-responsive", :style => "height: 240px; width:360px;"), "http://cunvc.org"
+        %h3
+          %a{href: "http://cunvc.org/"}
+            .black New Venture Challenge
+        %p NVC is an interdisciplinary competition presented by entities across campus. The goal is to provide an experiential adventure in entrepreneurship for CU students and members of the Boulder community.
       .col-lg-4.col-md-4.portfolio-item
         %a{href: "courses"}
           %img=link_to(image_tag( "CUclass.jpg", :class => "img-responsive"),courses_path)
@@ -30,13 +37,6 @@
           %a{href: "student_groups"} 
             .black Student Groups
         %p From the law school to the computer science department, students are engaged with entrepreneurship. Check out the different student groups to find out how you can get engaged and tap into the student body at CU-Boulder.
-      .col-md-4.col-md-4.portfolio-item
-        %a{href: "departments"}
-          %img=link_to(image_tag("departments.jpg", :class => "img-responsive", :style => "height: 240px; width:360px;"), departments_path)
-        %h3
-          %a{href: "departments"}
-            .black Departments and Groups
-        %p Find out how to get connected to the different entrepreneurial departments and campus groups. 
     .row
       .col-md-4.col-md-4.portfolio-item
         %a{href: "startups2students"}
@@ -44,6 +44,14 @@
         %h3
           %a{href: "#project-three"}
             .black Startups2Students
-        %p Lorem ipsum dolor sit amet, consectetur adipis
+        %p Students:  Get a job at a local startup!
+        %p Startups:  Find local talent for your companies!
+      .col-md-4.col-md-4.portfolio-item
+        %a{href: "departments"}
+          %img=link_to(image_tag("departments.jpg", :class => "img-responsive", :style => "height: 240px; width:360px;"), departments_path)
+        %h3
+          %a{href: "departments"}
+            .black Departments and Groups
+        %p Find out how to get connected to the different entrepreneurial departments and campus groups. 
 
     %hr/

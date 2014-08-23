@@ -56,7 +56,7 @@ student_groups = [
 
 ["Boulder Creatives","Cross-campus student club/nonprofit organization performing high-level design, marketing, and advertising work for Colorado companies.","Lcreatives.png","http://bouldercreatives.com"],
 
-["Business Law Association (BLA)","Provides law students with contacts and info about the business world.","No Photo URL","https://www.colorado.edu/law/students/organizations"],
+["Business Law Association (BLA)","Provides law students with contacts and info about the business world.","BLA","https://www.colorado.edu/law/students/organizations"],
 
 ["Collegiate Social Impact Initiatives (CSII)","We are college students working as effective and sustainable agents of positive social impact.","CSII.png","http://csii.colorado.edu"],
 
@@ -70,7 +70,7 @@ student_groups = [
 
 ["CUSkills","Connecting students to peers who can help.","cuskills.png","http://cuskills.com"],
 
-["CU Women In Business Club","Leeds focused, student club for females in business.","No Photo URL","https://leeds.colorado.edu/club/mbawomeninbusiness"],
+["CU Women in Business Club","Leeds focused, student club for females in business.","CU Women in Business","https://leeds.colorado.edu/club/mbawomeninbusiness"],
 
 ["Entrepreneurial Solutions","Leeds focused student consulting organization.","EntSolutions.png","http://leeds.colorado.edu/club/entrepsolutions"],
 

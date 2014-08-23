@@ -1,4 +1,4 @@
-%h3{:style =>"color:#999999; text-align:center;"}A guide to all things entrepreneurial in Boulder.
+%h3{:style =>"color:black; text-align:center;"}A guide to all things entrepreneurial at CU-Boulder and in the Front Range.
 #carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
   / Indicators
   %ol.carousel-indicators
@@ -8,11 +8,11 @@
   / Wrapper for slides
   .carousel-inner
     .item.active.constant
-      =render 'shared/s2s'
-    .item.constant
-      %img= link_to image_tag("space.jpg"), "/spaces/pivotdesk"
+      %img= link_to image_tag( "CUcampus.jpg"), "/campus"
       .carousel-caption
-        %h1 Get Space Now.
+        %h1 Get engaged at CU-Boulder.
+    .item.constant
+      =render 'shared/s2s'
     .item.constant
       %img= link_to image_tag("Rideorama.jpg"), "/events"
       .carousel-caption{:stlyle => "color:black; font-size:100px;"}

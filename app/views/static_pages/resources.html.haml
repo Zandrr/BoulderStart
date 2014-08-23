@@ -16,12 +16,12 @@
 .container
   .row
     .col-md-4.portfolio-item
-      %a{href: "spaces"}
-        %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
-      %h3.black 
-        %a{href: "spaces"} 
-          .black Spaces & Accelerators
-      %p A list of available spaces that entrepreneurs can use!
+      %a{href: "http://cunvc.org/"}
+        %img= link_to image_tag("nvc.png",:class => "img-responsive", :style => "height: 240px; width:360px;"), "http://cunvc.org"
+      %h3
+        %a{href: "http://cunvc.org/"}
+          .black New Venture Challenge
+      %p NVC is an interdisciplinary competition presented by entities across campus. The goal is to provide an experiential adventure in entrepreneurship for CU students and members of the Boulder community.
     .col-md-4.portfolio-item
       %a{href: "providers"}
         %img=link_to(image_tag( "providers.jpg", :class => "img-responsive"),providers_path)
@@ -74,3 +74,10 @@
         %a{href: "entity"}
           .black Business Development Entities
       %p These organizations will help educate you on how to start your business and make it grow. 
+    .col-md-4.portfolio-item
+      %a{href: "spaces"}
+        %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
+      %h3.black 
+        %a{href: "spaces"} 
+          .black Spaces & Accelerators
+      %p A list of available spaces that entrepreneurs can use!
