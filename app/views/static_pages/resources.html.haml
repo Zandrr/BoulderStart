@@ -16,13 +16,6 @@
 .container
   .row
     .col-md-4.portfolio-item
-      %a{href: "http://cunvc.org/"}
-        %img= link_to image_tag("nvc.png",:class => "img-responsive", :style => "height: 240px; width:360px;"), "http://cunvc.org"
-      %h3
-        %a{href: "http://cunvc.org/"}
-          .black New Venture Challenge
-      %p NVC is an interdisciplinary competition presented by entities across campus. The goal is to provide an experiential adventure in entrepreneurship for CU students and members of the Boulder community.
-    .col-md-4.portfolio-item
       %a{href: "providers"}
         %img=link_to(image_tag( "providers.jpg", :class => "img-responsive"),providers_path)
       %h3.black
@@ -36,7 +29,6 @@
         %a{href: "funding"} 
           .black Funding
       %p Are you deciding whether to bootstrap or raise venture capital funding? Know what all your local options for fundraising are.
-  .row
     .col-md-4.portfolio-item
       %a{href: "courses"}
         %img=link_to(image_tag( "CUclass.jpg", :class => "img-responsive"),courses_path)
@@ -44,6 +36,7 @@
         %a{href: "courses"} 
           .black Courses
       %p Courses offered at the University of Colorado at Boulder relating to entrepreneurship.
+  .row
     .col-md-4.portfolio-item
       %a{href: "student_groups"}
         %img=link_to(image_tag("student_groups.jpg", :class => "img-responsive", :style => "height: 240px"), student_groups_path)
@@ -58,7 +51,33 @@
         %a{href: "departments"}
           .black Departments and Groups
       %p Find out how to get connected to the different entrepreneurial departments and campus groups. 
+    .col-md-4.portfolio-item
+      %a{href: "entity"}
+        %img=link_to(image_tag("entity.jpg", :class => "img-responsive", :style => "height: 240px; width:360px;"), entity_path)
+      %h3
+        %a{href: "entity"}
+          .black Business Development Entities
+      %p These organizations will help educate you on how to start your business and make it grow. 
   .row
+    .col-md-4.portfolio-item
+      %a{href: "spaces"}
+        %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
+      %h3.black 
+        %a{href: "spaces"} 
+          .black Spaces & Accelerators
+      %p A list of available spaces that entrepreneurs can use!
+  .col-lg-12
+    %h1.page-header.pull-left
+      Featured Resources
+.container
+  .row
+    .col-md-4.portfolio-item
+      %a{href: "http://cunvc.org/"}
+        %img= link_to image_tag("nvc.png",:class => "img-responsive", :style => "height: 240px; width:360px;"), "http://cunvc.org"
+      %h3
+        %a{href: "http://cunvc.org/"}
+          .black New Venture Challenge
+      %p NVC is an interdisciplinary competition presented by entities across campus. The goal is to provide an experiential adventure in entrepreneurship for CU students and members of the Boulder community.
     .col-md-4.portfolio-item
       %a{href: "startups2students"}
         %img=link_to(image_tag("startups2students.png", :class => "img-responsive", :style => "height: 240px; width:360px;"), startups2students_path)
@@ -67,17 +86,26 @@
           .black Startups2Students
       %p Students:  Get a job at a local startup!
       %p Startups:  Find local talent for your companies!
+
     .col-md-4.portfolio-item
-      %a{href: "entity"}
-        %img=link_to(image_tag("entity.jpg", :class => "img-responsive", :style => "height: 240px; width:360px;"), entity_path)
+      %a{href:"http://sparkboulder.com/"}
+        %img= link_to image_tag("Spark.png",:class => "img-responsive", :style => "height: 240px; width:360px;"), "http://sparkboulder.com/"
       %h3
-        %a{href: "entity"}
-          .black Business Development Entities
-      %p These organizations will help educate you on how to start your business and make it grow. 
+        %a{href:"http://sparkboulder.com/"}
+          .black Spark Boulder
+      %p Spark Boulder is a student designed and created coworking meets incubator space, designed to foster creativity, progress talent, and accelerate innovative ideas.  Spark Boulder is a student entrepreneurs playground that will allow Boulder and the University of Colorado to remain at the forefront of student innovation and entrepreneurship.
+  .row
     .col-md-4.portfolio-item
-      %a{href: "spaces"}
-        %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
-      %h3.black 
-        %a{href: "spaces"} 
-          .black Spaces & Accelerators
-      %p A list of available spaces that entrepreneurs can use!
+      %a{href:"http://catalyzecu.com/"}
+        %img= link_to image_tag("catalyze.png",:class => "img-responsive", :style => "height: 240px;"), "http://catalyzecu.com/"
+      %h3
+        %a{href:"http://catalyzecu.com/"}
+          .black Catalyze
+      %p Catalyze CU is an 8 week startup accelerator designed for CU Students and Faculty. Catalyze CU combines world class mentorship and equity free grants with the University’s most promising ideas and technologies.
+    .col-md-4.portfolio-item
+      %a{href:"http://www.bencolorado.com/"}
+        %img= link_to image_tag("blackstone.jpg",:class => "img-responsive"), "http://www.bencolorado.com/"
+      %h3
+        %a{href:"http://www.bencolorado.com/"}
+          .black Blackstone Entrepreneurs Network
+      %p BEN identifies, promotes, and supports Colorado’s Gazelles: established high-growth companies that are likely to become Colorado’s next great ‘tentpole’ firms; and also identifies, promotes, and supports prospective gazelle companies by providing them access to the networks and resources they need to scale up and become a Colorado gazelle.
