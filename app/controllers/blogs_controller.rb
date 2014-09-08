@@ -9,8 +9,8 @@ class BlogsController < ApplicationController
   
 
   @client = Twitter::REST::Client.new do |config|
-    config.consumer_key        = "acupICugan9LNSpGPpg"
-    config.consumer_secret     = "DCgAwp7ZhV5cQsbadhtfEHVHBvqUXvUiH3XmjGLJA"
+    # config.consumer_key        = "acupICugan9LNSpGPpg"
+    # config.consumer_secret     = "DCgAwp7ZhV5cQsbadhtfEHVHBvqUXvUiH3XmjGLJA"
     end
       
       @users = ["PivotDesk", "GnipEng", "SiliconFlatiron"]
