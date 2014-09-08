@@ -5,8 +5,6 @@ SampleApp::Application.routes.draw do
   get "entity/index"
   get "entity/show"
   get "funding/index"
-  get "twitter/index"
-  get "twitter/user_tweet"
   resources :positions
   devise_for :users, :controllers => {:registrations => "registrations"}
   get "users", to: "users#index"

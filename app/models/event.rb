@@ -14,8 +14,8 @@ class Event < ActiveRecord::Base
 		endtime = Time.parse(entry['gd$when'][0]['endTime']).strftime("%A, %b %d at %I:%M %p")
 		location = entry['gd$where'][0]['valueString']
 
-
 		entries_array << [eventname, description, starttime, endtime, location]
+
 		#find unique events backend each with index
 	end
 
