@@ -122,9 +122,9 @@ funding = [
 
 ["CU Deming Center Venture Fund","The Deming Center Venture Fund provides both capital and resource support for emerging companies in Boulder and surrounding communities. The DCVF focuses on early stage investments, providing financial support that early-stage companies often require to develop and test new products and technologies.","/assets/DCVF.png","cudcvf.org", "AMS"],
 
-["Fraser McCombs Capital","Fraser McCombs Capital is a venture firm focused on early-stage technology companies within the automotive space. We are the first and only venture fund that’s managed by automotive entrepreneurs and dealers. We have long standing relationships with Tier 1, 2, and 3 vendors, and connections with leading OEM executives and principals of the largest dealer groups. This allows us to provide key introductions for our portfolio companies.","/assets/FMC.png","fmcap.com", "AMS"],
+["Fraser McCombs Capital","Fraser McCombs Capital is a venture firm focused on early-stage technology companies within the automotive space. We are the first and only venture fund that’s managed by automotive entrepreneurs and dealers. We have long standing relationships with Tier 1, 2, and 3 vendors, and connections with leading OEM executives and principals of the largest dealer groups. This allows us to provide key introductions for our portfolio companies.","/assets/FMC.png","http://fmcap.com", "AMS"],
 
-["Galvanize","Physical proximity to other doers, makers and innovators is important. There is no manual for entrepreneurial success. It’s a journey. A journey that is only limited on your ability to learn and grow. This type of learning comes from doing—from experience. The skills, connections, and mentorship your journey requires are coalesced here.","/assets/G.png","galvanize.it", "AMS"],
+["Galvanize","Physical proximity to other doers, makers and innovators is important. There is no manual for entrepreneurial success. It’s a journey. A journey that is only limited on your ability to learn and grow. This type of learning comes from doing—from experience. The skills, connections, and mentorship your journey requires are coalesced here.","/assets/G.png","http://galvanize.it", "AMS"],
 
 ["The Impact Angel Group","The Impact Angel Group is a network of angel investors equally dedicated to making a difference and realizing a return. The group applies best-of-breed practices to social impact investing and connects viable social entrepreneurs with financial, intellectual and human capital. The mission is to create social impact success stories for both entrepreneurs and investors. The group is a source of capital that exists to support the existing ecosystem and connect entrepreneurs and investors to the resources they need to succeed.","/assets/Nologo.png","http://impactangelgroup.com/", "AMS"],
 
@@ -132,7 +132,7 @@ funding = [
 
 ["Open Angel Forum (OAF)","The Open Angel Forum (OAF) is dedicated to providing entrepreneurs with access to the angel investor community based solely on merit (and without fees). Additionally, we strive to build collaboration between angel investors and to inspire high-net worth individuals to become angels. Leading the Boulder chapter are none other than Brad Feld and David Cohen.","/assets/OpenAngelForum.png", 'N/A', "AMS"],
 
-["Rockies Venture Club","For over 28 years, Colorado has looked to the Rockies Venture Club to connect investors, service providers, and entrepreneurs. Rockies Venture Club is a non-profit organization. RVC 2.0 envisioned in 2012 builds on RVC’s tradition of connecting investors and entrepreneurs and adds active angel groups, more sophisticated training and education, more events, a more diverse community and metric-driven action oriented approach to funding early stage companies.","/assets/RockiesVentureClub.png","rockiesventureclub.org", "AMS"],
+["Rockies Venture Club","For over 28 years, Colorado has looked to the Rockies Venture Club to connect investors, service providers, and entrepreneurs. Rockies Venture Club is a non-profit organization. RVC 2.0 envisioned in 2012 builds on RVC’s tradition of connecting investors and entrepreneurs and adds active angel groups, more sophisticated training and education, more events, a more diverse community and metric-driven action oriented approach to funding early stage companies.","/assets/RockiesVentureClub.png","http://rockiesventureclub.org", "AMS"],
 
 ["Silicon Valley Bank Financial Group","Silicon Valley Bank Financial Group provides diversified financial services to emerging, growth and established technology companies and the life science, venture capital and premium wine markets. Through its focus on specialized markets and extensive knowledge of the people and business issues driving them, SVB Financial Group provides a level of service and partnership that measurably impacts its clients’ success.","/assets/SVBFinancial.png","http://www.svb.com/", "AMS"],
 
@@ -151,9 +151,7 @@ entities = [
 
 ["Boulder Small Business Development Center","The Boulder Small Business Development Center provides resources to help make your business successful, whether you are established, ready to grow, or just starting up.  The Boulder SBDC supports Boulder County businesses in three ways: workshops held throughout the year on a variety of topics,
 
-confidential one-on-one consulting with experienced businesspeople, and
-
-connecting clients to other valuable small business resources.","/assets/SBDC.png","http://www.bouldersbdc.com/"],
+confidential one-on-one consulting with experienced businesspeople, and connecting clients to other valuable small business resources.","/assets/SBDC.png","http://www.bouldersbdc.com/"],
 
 
 
@@ -363,7 +361,7 @@ spaces = [
 
 
 
-["Galvanize","Physical proximity to other doers, makers and innovators is important. There is no manual for entrepreneurial success. It’s a journey. A journey that is only limited on your ability to learn and grow. This type of learning comes from doing—from experience. The skills, connections, and mentorship your journey requires are coalesced here.","/assets/Galvanize.png","galvanize.it", "space"],
+["Galvanize","Physical proximity to other doers, makers and innovators is important. There is no manual for entrepreneurial success. It’s a journey. A journey that is only limited on your ability to learn and grow. This type of learning comes from doing—from experience. The skills, connections, and mentorship your journey requires are coalesced here.","/assets/Galvanize.png","http://galvanize.it", "space"],
 
 
 
@@ -398,21 +396,22 @@ spaces = [
 
 departments = [
 
-["Advertising/Journalism Department", "journalism.colorado.edu","With a history of journalism instruction that dates back to 1909, the program provides a sound liberal arts foundation and solid professional preparation. Students receive education aimed at disciplined, critical thinking and analysis through the study of media history, law, ethics, writing and social processes.","/assets/Journalism.png"],
+["Deming Center for Entrepreneurship/Leeds School of Business","http://www.colorado.edu/leeds/deming","Inspiring and empowering students around entrepreneurship. Provides classes, certificate/minor, startup toolkit and resources, events, experiential opportunities for teachers to integrate into the classroom.","/assets/Deming.png"],
 
-["ATLAS", "www.colorado.edu/atlas/", "Education, research, and creative work around information and communication technology.", "/assets/ATLAS.png"],
+["ATLAS", "http://colorado.edu/atlas/", "Education, research, and creative work around information and communication technology.", "/assets/ATLAS.png"],
 
-["BioFrontiers Institute","biofrontiers.colorado.edu","The BioFrontiers Institute was founded at the University of Colorado to: Advance human health and welfare by conducting research in critical frontiers of unknown biology and translating new knowledge to practical applications, educate a new generation of interdisciplinary scientists, empowering them to work together to push the boundaries of human knowledge and reap its benefits, and leverage and expand Colorado’s leadership in biotechnology and its promise for human advancement.", "/assets/BioFrontiers.png"],
+["Silicon Flatirons Center","http://www.silicon-flatirons.org/","The Silicon Flatirons Center for Law, Technology, and Entrepreneurship is an interdisciplinary research center at the University of Colorado Law School. Silicon Flatirons' core mission is to elevate the debate surrounding technology policy issues; support and enable entrepreneurship in the technology community; and inspire, prepare, and place students in these important areas.","/assets/silicon.png"],
 
-["Boulder Digital Works (BDW)","bdw.colorado.edu","The BDW Designer Founder Accelerator is a 50-week graduate program dedicated to redesigning learning for the realities of the 21st-century global economy. We take no more than twenty students annually and, from August to August, develop them into marketable talent that possesses a unique and relevant combination of design, research, engineering and marketing. They regularly land in the most innovative companies in the world or simply launch their own.","/assets/BDW.png"],
+["Advertising/Journalism Department", "http://journalism.colorado.edu","With a history of journalism instruction that dates back to 1909, the program provides a sound liberal arts foundation and solid professional preparation. Students receive education aimed at disciplined, critical thinking and analysis through the study of media history, law, ethics, writing and social processes.","/assets/Journalism.png"],
+
+["BioFrontiers Institute","http://biofrontiers.colorado.edu","The BioFrontiers Institute was founded at the University of Colorado to: Advance human health and welfare by conducting research in critical frontiers of unknown biology and translating new knowledge to practical applications, educate a new generation of interdisciplinary scientists, empowering them to work together to push the boundaries of human knowledge and reap its benefits, and leverage and expand Colorado’s leadership in biotechnology and its promise for human advancement.", "/assets/BioFrontiers.png"],
+
+["Boulder Digital Works (BDW)","http://bdw.colorado.edu","The BDW Designer Founder Accelerator is a 50-week graduate program dedicated to redesigning learning for the realities of the 21st-century global economy. We take no more than twenty students annually and, from August to August, develop them into marketable talent that possesses a unique and relevant combination of design, research, engineering and marketing. They regularly land in the most innovative companies in the world or simply launch their own.","/assets/BDW.png"],
 
 ["Center for Education in Social Responsibility (CESR)", "http://cesr.colorado.edu" ,"Helps students become globally conscious business leaders.","/assets/CESR.png"],
 
-["Department of Computer Science", "cs.colorado.edu","","CS.png"],
+["Department of Computer Science", "http://cs.colorado.edu","","CS.png"],
 
-["CU Cleantech", "cucleantech.org", "Focus on clean tech and energy research and commercialization.","/assets/CleanTech.png"],
-
-["Deming Center for Entrepreneurship/Leeds School of Business","deming.colorado.edu","Inspiring and empowering students around entrepreneurship. Provides classes, certificate/minor, startup toolkit and resources, events, experiential opportunities for teachers to integrate into the classroom.","/assets/Deming.png"],
 
 ["Entrepreneurship Center for Music","http://www.colorado.edu/music/ecm","Promotes entrepreneurship in the arts.","/assets/Music.png"],
 
@@ -422,7 +421,6 @@ departments = [
 
 ["Mechanical Engineering","http://www.me.colorado.edu","Our mission is to provide the excellent education, research, and service necessary to train the engineer of the new century, to advance the state of the art of engineering science and technology, and to provide advice and counsel to the state, region, nation, and the world.", "/assets/ME.png"],
 
-["Silicon Flatirons Center","http://www.silicon-flatirons.org/","The Silicon Flatirons Center for Law, Technology, and Entrepreneurship is an interdisciplinary research center at the University of Colorado Law School. Silicon Flatirons' core mission is to elevate the debate surrounding technology policy issues; support and enable entrepreneurship in the technology community; and inspire, prepare, and place students in these important areas.","/assets/silicon.png"],
 
 ["Tech Transfer Office","https://www.cu.edu/techtransfer","Patent and Legal Resources. Package, protect, and license business and intellectual property generated by faculty, staff, and students.","/assets/TTO.png"],
 
