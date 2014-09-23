@@ -26,6 +26,8 @@ end
 
   resources :departments
 
+  resources :jobs
+
 
   get "courses/new"
   get "courses/index"
