@@ -9,7 +9,8 @@
             %span.caret
           %ul.dropdown-menu{:role => "menu"}
             %li.divider
-            %li=link_to "Blogs", blog_path
+            %li=link_to "Blogs", blogs_path(:filter => false)
+            %li=link_to "Press", blogs_path(:filter => true)
 
         %li= link_to "Events", events_path
         %li= link_to "Resources", resources_path

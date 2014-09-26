@@ -7,16 +7,10 @@ SampleApp::Application.routes.draw do
   get "funding/index"
   resources :positions
   devise_for :users, :controllers => {:registrations => "registrations"}
-  get "users", to: "users#index"
-  get "users/:id", to: "users#show", as: "user"
-  get "weekly_emails", to: "users#weekly_emails"
 
  
 
-
- resources :users do
   resources :blogs
-end
 
   resources :events
 
@@ -37,7 +31,6 @@ end
   match '/funding', to: 'funding#index', via: 'get'
   match 'entity', to: 'entity#index', via: 'get'
   match '/resources',    to: 'static_pages#resources', via: 'get'
-  match '/blog',   to: 'blogs#index', via: 'get'
   match '/contact', to: 'static_pages#contactus', via: 'get'
   match '/campus',    to: 'static_pages#campus', via: 'get'
   match '/courses', to: 'courses#index', via:'get'

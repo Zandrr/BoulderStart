@@ -1,10 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
 class_list =  [
@@ -435,24 +428,23 @@ class_list.each do |name, code, description, discipline |
 end
 
 student_groups.each do |name, description, photo, website |
-	StudentGroups.create(name: name, description: description, photo: photo, website: website)
+  StudentGroups.create(name: name, description: description, photo: photo, website: website)
 end
 
 funding.each do |name, description, photo, website, funding_type|
-	Funding.create(name: name, description: description, photo: photo, website: website, funding_type: funding_type)
+  Funding.create(name: name, description: description, photo: photo, website: website, funding_type: funding_type)
 end
 
 entities.each do |name, description, photo, website |
-	Entities.create(name: name, description: description, photo: photo, website: website)
+  Entities.create(name: name, description: description, photo: photo, website: website)
 end
 
 providers.each do |name, description, photo, website, provider_type|
-	Providers.create(name: name, description: description, photo: photo, website: website, provider_type: provider_type)
+  Providers.create(name: name, description: description, photo: photo, website: website, provider_type: provider_type)
 end
 
 spaces.each do |name, description, photo, website, space_type|
-	Space.create(name: name, description: description, photo: photo, website: website, space_type: space_type)
+  Space.create(name: name, description: description, photo: photo, website: website, space_type: space_type)
 end
-
 
 
