@@ -3,20 +3,9 @@
 
 $lightgrey: #999;
 $global-border-radius: 5px;
-$global-border-radius-sharp: 2px;
+// $global-border-radius-sharp: 2px;
 
-// /* universal */
-%img {
-  width:10px;
-}
-.text{
-  padding: 5% 20% 20% 20%;
-  display: block;
-}
-.panel-heading{
-  font-weight: bold;
-}
-
+/* universal */
 html {
 	overflow-y:scroll;
 }
@@ -26,28 +15,18 @@ body {
   background-color:#FFFFF0;
 }
 
-section {
-  overflow: auto;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.center {
-  text-align: center;
-	h1 {
-	  margin-bottom: 10px;
-	}
-}
-
-// /* typography */
+/* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  text-decoration: none;
   &:hover {
     text-decoration: none;
   }
+}
+//active admin fucks things up - here's the fix
+a:link{
+  text-decoration: none;
 }
 
 .website a{
@@ -79,7 +58,18 @@ p {
 }
 
 
-// /* header */
+/* header */
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #999999; 
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.0em;
+    &:hover {
+      color: $lightgrey;
+    }
+  }
+
 
 
 #logo {
@@ -93,25 +83,14 @@ p {
   padding-top: 9px;
   font-weight: 300;
   line-height: 1;
+  text-decoration: none;
 	&:hover {
 	  color: $lightgrey;
 	  text-decoration: none;
 	}
 }
 
-header li {
-  font-family: sans-serif;
-  font-size: 1.0em;
-  color: white;
-  text-transform: uppercase;
-
-  &:hover {
-    color: $lightgrey;
-    text-decoration: none;
-  }
-}
-
-// /* footer */
+/* footer */
 
 
 footer {
@@ -125,49 +104,7 @@ footer {
   overflow:hidden;
   }
 
-
-	a {
-	  color: #555;
-		&:hover {
-		  color: #222;
-      text-decoration: none;
-		}
-	}
-
-	small {
-	  float: left;
-	}
-
-	ul {
-	  float: right;
-	  list-style: none;
-		li {
-		  float: left;
-		  margin-left: 10px;
-		}
-	}	
-
-
-body {
-margin-top: 10px; /* 50px is the height of the navbar - change this if the navbarn height changes */
-}
-
-.portfolio-item {
-margin-bottom: 25px;
-}
-
-footer {
-margin: 50px 0;
-}
-
-.text-justify {
-  text-align: justify;
-}
-.panel-title{
-  text-decoration: none;
-  color:black;
-}
-
+/* footer end */
 
 .constant img {
   display: block;
@@ -178,35 +115,16 @@ margin: 50px 0;
   max-height: 530px;
 }
 
-.custom{
-  display: inline-block;
-  vertical-align: top;
-}
-
 
 .black{
   color: #181818;
-  font-size: 20px
-}
-.darken {
-  color: black;
-}
-
- a .item img{
-  width:300px;
-  display:inline-block;
-}
-
-.panel.panel-default{
-  opacity: .75;
-  color:$lightgrey;
-}
-.navbar-fixed-top{
-  opacity: .9;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 
-/* User sign in and sign forms. */
+
+// /* User sign in and sign forms. */
 .border-form-div {
   max-width: 300px;
   padding: 19px 29px 29px;
@@ -253,80 +171,10 @@ label.checkbox{
 
 
 
-/*startups2students users page */
 
-.position-pane{
-  background-color: #333333;
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-  a {
-    color: rgb(202, 202, 202);
-  }
-  .row{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .white-box{
-    display: inline-block;
-    min-width: 100px;
-    *display: inline;
-    padding: 4px 12px;
-    margin-bottom: 0;
-    *margin-left: .3em;
-    line-height: 20px;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    border: 1px solid #cccccc;
-    *border: 0;
-    &:hover{
-      background-color: white;
-      color: black;
-      a {color: black;}
-    }
-  }
-
-  .gray-box{
-    display: inline-block;
-    min-width: 100px;
-    *display: inline;
-    padding: 4px 12px;
-    margin-bottom: 0;
-    *margin-left: .3em;
-    line-height: 20px;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid gray;
-    color: gray;
-    *border: 0;
-  }
-
-
-
-  .resume{
-    text-align: right;
-    vertical-align: middle;
-    cursor: pointer;
-    font-size: 18px;
-    padding-top: 15px;
-    &:hover a{
-      color:black;
-    }
-    &:hover{
-      color:black;
-    }
-  }
-}
-
-
-
-
-
-
-/*startups2students home page */
-/* Main
---------------------------------------------- */
+// /*startups2students home page */
+// /* Main
+// --------------------------------------------- */
 
 #main {
     background-color: #333333;

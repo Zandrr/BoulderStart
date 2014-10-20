@@ -419,6 +419,25 @@ departments = [
 
 ]
 
+jobs = [
+
+["Techstars", "http://jobs.techstars.com", "TechStars also lists jobs available with their program graduates, including Next Big Sound, Occipital, and SendGrid.", "/assets/TechStars.png" ],
+
+["Foundry Group", "http://www.foundrygroup.com/jobs/", "The Foundry Group lists jobs in their portfolio companies, from Admeld to Zynga.", "/assets/FoundryGroup.png"],
+
+["New Tech Colorado", "http://www.bdnewtech.com/hiring", "The Boulder New Tech Meetup Jobs Board is a hotbed of technology jobs. Programmers, designers and online marketers rejoice!
+", "/assets/NewTech.png"],
+
+["Down Town Boulder", "http://www.boulderdowntown.com/business/job-listings", "Downtown Boulder updates their list of jobs from the local community and Craigslist every Monday, keeping it current and loaded with great positions of every kind, from baristas to bus drivers to business development specialists.", "/assets/DownTownBoulder.png"],
+
+["Boulder.me", "http://boulder.me/", "Boulder.me is an organization devoted to informing and serving the vibrant startup community in beautiful Boulder, Colorado. We do that on the website; on Twitter, and with outreach and events all year long. There is also a job listing service on the site.", "/assets/BoulderMe.png"],
+
+["CU Career Services", "http://careerservices.colorado.edu/students/CareerBuffs.aspx", "CU Career Services is a broad resource for CU students.", "/assets/CUCareer.png"],
+
+["Interns2Startups", "http://www.interns2startups.com/startup-signup", "Students:  Get a job at a local startup!  Startups:  Find local talent for your companies!", "/assets/interns2startups.png"],
+
+]
+
 departments.each do |name, website, description, photo |
   Departments.create(name: name, website: website, description: description, photo: photo, )
 end
@@ -447,4 +466,7 @@ spaces.each do |name, description, photo, website, space_type|
   Space.create(name: name, description: description, photo: photo, website: website, space_type: space_type)
 end
 
+jobs.each do |name, website, description, photo |
+  Jobs.create(name: name, website: website, description: description, photo: photo, )
+end
 

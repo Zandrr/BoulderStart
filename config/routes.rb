@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   get "providers/index"
   get "provider/index"
