@@ -1,33 +1,26 @@
 class Event < ActiveRecord::Base
 
 	def self.getcal
-	responseA = HTTParty.get('http://www.google.com/calendar/feeds/mne8qs3476i08o4v9l00urrfqs@group.calendar.google.com/public/full?alt=json&orderby=starttime&max-results=15&singleevents=true&sortorder=ascending&futureevents=true')
-	responseB = HTTParty.get('http://www.google.com/calendar/feeds/e254hmc3995a6m45a09sj5oaj1danqjn@import.calendar.google.com/public/full?alt=json&orderby=starttime&max-results=15&singleevents=true&sortorder=ascending&futureevents=true')
-	# responseC = HTTParty.get('http://www.google.com/calendar/feeds/29kqsoi4m7vuv8dt1i8c73qtfkrd69hm@import.calendar.google.com/public/full?alt=json&orderby=starttime&max-results=15&singleevents=true&sortorder=ascending&futureevents=true')
-	entries = responseA['feed']['entry'] + responseB['feed']['entry'] 
+	responseA = HTTParty.get('https://www.googleapis.com/calendar/v3/calendars/mne8qs3476i08o4v9l00urrfqs%40group.calendar.google.com/events?key=AIzaSyBbqZt3S_-Kkk1Umk1R-x6NWPADZhoYHHA&maxResults=2500&orderBy=starttime&singleEvents=true')
+	responseB = HTTParty.get('https://www.googleapis.com/calendar/v3/calendars/vhoksdvlkipho5ojf7h1uflhefdisrs2@import.calendar.google.com/events?key=AIzaSyBbqZt3S_-Kkk1Umk1R-x6NWPADZhoYHHA&maxResults=2500&orderBy=starttime&singleEvents=true')
+	entries = responseB['items'] + responseA['items']
 	entries_array = Array.new
+		entries.each do |entry|
+			if entry['status'] != 'cancelled' && (Time.parse(entry['start']['dateTime']) < Time.now + 604800*2) && (Time.parse(entry['start']['dateTime']) > Time.now )
+				eventname = entry['summary']
+				description = entry['description']
+				starttime = Time.parse(entry['start']['dateTime'])
+				endtime = Time.parse(entry['end']['dateTime']).strftime("%A, %b %d at %I:%M %p")
+				location = entry['location']
 
-	entries.each do |entry|
-		eventname = entry['title']['$t']
-		description = entry['content']['$t'].html_safe
-		starttime = Time.parse(entry['gd$when'][0]['startTime'])
-		endtime = Time.parse(entry['gd$when'][0]['endTime']).strftime("%A, %b %d at %I:%M %p")
-		location = entry['gd$where'][0]['valueString']
-
-		entries_array << [eventname, description, starttime, endtime, location]
+				entries_array << [eventname, description, starttime, endtime, location]
+				entries_array
 
 		#find unique events backend each with index
+			end
 	end
 
-	entries_array
+	entries_array 
 end
 
 end
-
-
-
-
-
-
-
-
