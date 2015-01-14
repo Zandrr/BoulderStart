@@ -382,7 +382,7 @@ spaces = [
 
 ["Catalyze", "Catalyze CU is an 8 week startup accelerator designed for CU Students and Faculty. Catalyze CU combines world class mentorship and equity free grants with the University’s most promising ideas and technologies.", "/assets/catalyze.png", "accelerator"],
 
-["Blacktone Entrepreneurs Network", "BEN identifies, promotes, and supports Colorado’s Gazelles: established high-growth companies that are likely to become Colorado’s next great ‘tentpole’ firms; and also identifies, promotes, and supports prospective gazelle companies by providing them access to the networks and resources they need to scale up and become a Colorado gazelle.", "/assets/blackstone.jpg", "accelerator"],
+["Blacktone Entrepreneurs Network", "BEN identifies, promotes, and supports Colorado’s Gazelles: established high-growth companies that are likely to become Colorado’s next great ‘tentpole’ firms; and also identifies, promotes, and supports prospective gazelle companies by providing them access to the networks and resources they need to scale up and become a Colorado gazelle.", "/assets/blackstone.png", "accelerator"],
 
 ]
 
@@ -435,6 +435,10 @@ jobs = [
 ["CU Career Services", "http://careerservices.colorado.edu/students/CareerBuffs.aspx", "CU Career Services is a broad resource for CU students.", "/assets/CUCareer.png"],
 
 ["Interns2Startups", "http://www.interns2startups.com/startup-signup", "Students:  Get a job at a local startup!  Startups:  Find local talent for your companies!", "/assets/interns2startups.png"],
+
+["Grotech Ventures", "http://www.grotech.com/", "We have built a reputation for being a collaborative, long-term partner for entrepreneurs. We not only add value through years of experience, but we also work hard to align our goals with those of our entrepreneurs.", "/assets/GrotechVentures.png"],
+
+["Luke's Circle", "http://www.lukescircle.com", "Connecting talented professionals to growing companies in Denver, Boulder and beyond", "/assets/lukes_circle.png"],
 
 ]
 

@@ -16,14 +16,14 @@
   .row
     .col-md-4.portfolio-item
       %a{href: "http://cunvc.org/"}
-        %img= link_to image_tag("nvc.png",:class => "img-responsive", :style => "height: 240px; width:360px;"), "http://cunvc.org"
+        %img= link_to image_tag("nvc.png",:class => "img-responsive"), "http://cunvc.org"
       %h3
         %a{href: "http://cunvc.org/"}
           .black New Venture Challenge
       %p NVC is an interdisciplinary competition presented by entities across campus. The goal is to provide an experiential adventure in entrepreneurship for CU students and members of the Boulder community.
     .col-md-4.portfolio-item
       %a{href: "interns2startups"}
-        %img=link_to(image_tag("interns2startups.png", :class => "img-responsive", :style => "margin-top: 61px; margin-bottom: 61px"), "http://www.interns2startups.com/startup-signup")
+        %img=link_to(image_tag("interns2startups.png", :class => "img-responsive"), "http://www.interns2startups.com/startup-signup")
       %h3
         %a{href: "http://www.interns2startups.com/startup-signup"}
           .black Interns2Startups
@@ -32,7 +32,7 @@
 
     .col-md-4.portfolio-item
       %a{href:"http://sparkboulder.com/"}
-        %img= link_to image_tag("Spark.png",:class => "img-responsive", :style => "height: 240px; width:360px;"), "http://sparkboulder.com/"
+        %img= link_to image_tag("Spark.png",:class => "img-responsive"), "http://sparkboulder.com/"
       %h3
         %a{href:"http://sparkboulder.com/"}
           .black Spark Boulder
@@ -40,14 +40,14 @@
   .row
     .col-md-4.portfolio-item
       %a{href:"http://catalyzecu.com/"}
-        %img= link_to image_tag("catalyze.png",:class => "img-responsive", :style => "height: 240px;"), "http://catalyzecu.com/"
+        %img= link_to image_tag("catalyze.png",:class => "img-responsive"), "http://catalyzecu.com/"
       %h3
         %a{href:"http://catalyzecu.com/"}
           .black Catalyze
       %p Catalyze CU is an 8 week startup accelerator designed for CU Students and Faculty. Catalyze CU combines world class mentorship and equity free grants with the University’s most promising ideas and technologies.
     .col-md-4.portfolio-item
       %a{href:"http://www.bencolorado.com/"}
-        %img= link_to image_tag("blackstone.jpg",:class => "img-responsive", :style => "margin-bottom: 86px; margin-top:86px;"), "http://www.bencolorado.com/"
+        %img= link_to image_tag("blackstone.png",:class => "img-responsive"), "http://www.bencolorado.com/"
       %h3
         %a{href:"http://www.bencolorado.com/"}
           .black Blackstone Entrepreneurs Network
@@ -59,21 +59,21 @@
   .row
     .col-md-4.portfolio-item
       %a{href: "providers"}
-        %img=link_to(image_tag( "providers.jpg", :class => "img-responsive"),providers_path)
+        %img=link_to(image_tag( "providers.png", :class => "img-responsive"),providers_path)
       %h3.black
         %a{href: "providers"} 
           .black Service Providers
       %p Whether you are looking for a lawyer, some accounting help, or some assistance building your marketing campaign, these local service providers love working with startups.
     .col-md-4.portfolio-item
       %a{href: "funding"}
-        %img=link_to(image_tag( "funding.jpg", :class => "img-responsive"),funding_path)
+        %img=link_to(image_tag( "funding.png", :class => "img-responsive"),funding_path)
       %h3.black
         %a{href: "funding"} 
           .black Funding
       %p Are you deciding whether to bootstrap or raise venture capital funding? Know what all your local options for fundraising are.
     .col-md-4.portfolio-item
       %a{href: "courses"}
-        %img=link_to(image_tag( "CUclass.jpg", :class => "img-responsive"),courses_path)
+        %img=link_to(image_tag( "CUclass.png", :class => "img-responsive"),courses_path)
       %h3
         %a{href: "courses"} 
           .black Courses
@@ -81,21 +81,21 @@
   .row
     .col-md-4.portfolio-item
       %a{href: "student_groups"}
-        %img=link_to(image_tag("student_groups.jpg", :class => "img-responsive", :style => "height: 240px"), student_groups_path)
+        %img=link_to(image_tag("student_groups.png", :class => "img-responsive"), student_groups_path)
       %h3
         %a{href: "student_groups"} 
           .black Student Groups
       %p From the law school to the computer science department, students are engaged with entrepreneurship. Check out the different student groups to find out how you can get engaged and tap into the student body at CU-Boulder.
     .col-md-4.portfolio-item
       %a{href: "departments"}
-        %img=link_to(image_tag("departments.jpg", :class => "img-responsive", :style => "height: 240px; width:360px;"), departments_path)
+        %img=link_to(image_tag("departments.png", :class => "img-responsive"), departments_path)
       %h3
         %a{href: "departments"}
           .black Departments and Groups
       %p Find out how to get connected to the different entrepreneurial departments and campus groups. 
     .col-md-4.portfolio-item
       %a{href: "entity"}
-        %img=link_to(image_tag("entity.jpg", :class => "img-responsive", :style => "height: 240px; width:360px;"), entity_path)
+        %img=link_to(image_tag("entity.png", :class => "img-responsive"), entity_path)
       %h3
         %a{href: "entity"}
           .black Business Development Entities
@@ -103,9 +103,16 @@
   .row
     .col-md-4.portfolio-item
       %a{href: "spaces"}
-        %img=link_to(image_tag( "space.jpg", :class => "img-responsive"),spaces_path)
+        %img=link_to(image_tag( "space.png", :class => "img-responsive"),spaces_path)
       %h3.black 
         %a{href: "spaces"} 
           .black Spaces & Accelerators
       %p A list of available spaces that entrepreneurs can use!
+    .col-md-4.portfolio-item
+      %a{href:"jobs"}
+        %img= link_to image_tag("job.png",:class => "img-responsive"), "/jobs"
+      %h3
+        %a{href:"jobs"}
+          .black Jobs
+      %p Find your dream job in Boulder with these job resources.
 
