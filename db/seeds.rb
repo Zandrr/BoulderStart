@@ -330,6 +330,8 @@ providers = [
 
 ["Kurtz Fargo LLP","Kurtz Fargo LLP provides high quality assurance, tax and advisory services to emerging growth, small and mid-sized businesses.  The Firm is committed to delivering high quality expertise, outstanding client service and utilizing cutting edge technology and research tools.","/assets/KF.png","http://www.kurtzfargo.com/what-we-do/", "accounting"],
 
+["Boyarski IP", "We specialize in developing patent portfolios for research and development-focused companies, ranging from tech startups to multinational corporations.", "/assets/BoyarskiIP.png", "http://boyarski-ip.com/", "legal"],
+
 
 
 
